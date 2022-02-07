@@ -1,0 +1,51 @@
+.content_lesson {
+    position: relative;
+    width: 1404px;
+    height: 726px;
+    border-radius: 30px;
+    background-color: #EAEBED;
+    margin: auto;
+    padding-top: 138px;
+}
+
+.table,
+.table_body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 64px;
+    width: 1194px;
+    height: 64px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'chronicaPro-Regular-sultannahia';
+    color: #000000;
+    margin: auto;
+}
+
+.table_body:hover {
+    border-radius: 21px;
+    background-color: white;
+}
+
+.content_lesson p {
+    margin-left: 0px;
+    width: 219px;
+}
+
+.fa-download {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: white;
+}
+
+.fa-download:hover {
+    background-color: #2785F7;
+    color: white;
+}
+
+input[type="checkbox"] {
+    width: 35px;
+}

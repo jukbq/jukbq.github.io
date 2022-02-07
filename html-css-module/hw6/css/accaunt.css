@@ -1,0 +1,150 @@
+.content_accaunt {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    width: 1404px;
+    height: 726px;
+    border-radius: 30px;
+    background-color: #EAEBED;
+    margin: auto;
+}
+
+.box_content_accaunt {
+    width: 105px;
+    height: 726px;
+    position: relative;
+}
+
+.block_1_accaunt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 105px;
+    height: 420px;
+    background-color: white;
+    border-radius: 30px;
+    top: 171px;
+}
+
+.form_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 615px;
+    height: 679px;
+}
+
+.accaunt_name,
+.accaunt_name_2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 615px;
+    height: 149px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.accaunt_name_2 {
+    width: 580px;
+}
+
+.title_a,
+.lock {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #F24F5E;
+    text-align: center;
+    line-height: 65px;
+    margin-left: 42px;
+}
+
+.title_a p {
+    color: white;
+    font-size: 39px;
+    margin-left: 0px;
+}
+
+.fa-lock {
+    color: white;
+    font-size: 35px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.change_pass {
+    position: relative;
+    width: 615px;
+    height: 517px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.form_2 {
+    position: relative;
+    width: 590px;
+    height: 679px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.lock {
+    background-color: #2785F7;
+}
+
+
+/*--------------------form change_pass----------------*/
+
+form {
+    margin-left: 42px;
+}
+
+label {
+    display: block;
+    font-family: 'bahij-sultannahia';
+    font-size: 24px;
+    color: black;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+
+input {
+    outline: none;
+    width: 524px;
+    height: 63px;
+    border-radius: 21px;
+    border: 2px solid #C0C0C0;
+    padding-left: 15px;
+}
+
+input:focus {
+    border: 2px solid #2785F7;
+}
+
+input::placeholder {
+    font-family: 'bahij-sultannahia';
+    font-size: 24px;
+    color: #B1B1B1;
+}
+
+.form_2>form>input {
+    width: 506px;
+}
+
+input[name="address"] {
+    height: 100px;
+}
+
+.small_input {
+    width: 220px;
+    height: 63px;
+}
+
+.right_form {
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+}

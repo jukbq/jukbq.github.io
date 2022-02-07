@@ -1,0 +1,71 @@
+        /*------------------left mrnu animation-----------------*/
+        
+        .active {
+            background-color: #2785F7;
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .icon_box:hover {
+            color: white;
+        }
+        
+        .icon_box>a:hover {
+            display: block;
+            position: relative;
+            height: 100%;
+            border: 1px solid black;
+            z-index: 5;
+        }
+        
+        .projqct::after,
+        .account::after,
+        .groups::after,
+        .cloud::after,
+        .setting::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 62px;
+            color: rgba(255, 255, 255, 0);
+            border-radius: 15px;
+            color: rgba(255, 255, 255, 0);
+            left: 19px;
+            z-index: -1;
+            padding-left: 40px;
+            transition: all 0.7s;
+            font-family: 'chronicaPro-Regular-sultannahia';
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .projqct:hover::after,
+        .account:hover::after,
+        .groups:hover::after,
+        .cloud:hover::after,
+        .setting:hover::after {
+            width: 151px;
+            background-color: #2785F7;
+            color: white;
+        }
+        
+        .projqct::after {
+            content: "Projqct";
+        }
+        
+        .account:hover::after {
+            content: "Account";
+        }
+        
+        .groups:hover::after {
+            content: "Groups";
+        }
+        
+        .cloud:hover::after {
+            content: "Cloud";
+        }
+        
+        .setting:hover::after {
+            content: "Setting";
+        }
