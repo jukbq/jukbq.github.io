@@ -15,12 +15,23 @@ section {
     justify-content: space-around;
     align-items: flex-start;
     padding: 50px 20px;
+    >:nth-child(1) {
+        background-color: #ffa60065;
+        .list-group-item {
+            background-color: #ffa6002a;
+        }
+    }
+    >:nth-child(2) {
+        background-color: #0400ff65;
+        .list-group-item {
+            background-color: #0400ff2a;
+        }
+    }
     .modul {
         width: 22%;
         height: auto;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 5px;
-        padding-bottom: 65px;
         h3 {
             width: 100%;
             height: auto;
@@ -38,9 +49,6 @@ section {
                 }
             }
         }
-        .list-group-item {
-            background-color: rgba(139, 134, 134, 0.329);
-        }
         .dropdown-menu {
             transition: all 0.5s;
             max-height: 0;
@@ -57,7 +65,7 @@ section {
                 opacity: 1;
                 margin-top: 0px;
                 li:hover {
-                    background-color: #8b8686be;
+                    background-color: #8b868655;
                 }
             }
         }

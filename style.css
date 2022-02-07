@@ -28,12 +28,27 @@ section {
   padding: 50px 20px;
 }
 
+section > :nth-child(1) {
+  background-color: #ffa60065;
+}
+
+section > :nth-child(1) .list-group-item {
+  background-color: #ffa6002a;
+}
+
+section > :nth-child(2) {
+  background-color: #0400ff65;
+}
+
+section > :nth-child(2) .list-group-item {
+  background-color: #0400ff2a;
+}
+
 section .modul {
   width: 22%;
   height: auto;
   border: 1px solid black;
   border-radius: 5px;
-  padding-bottom: 65px;
 }
 
 section .modul h3 {
@@ -57,10 +72,6 @@ section .modul .navbar-nav .dropdown .nav-link {
   text-overflow: ellipsis;
 }
 
-section .modul .list-group-item {
-  background-color: rgba(139, 134, 134, 0.329);
-}
-
 section .modul .dropdown-menu {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -80,6 +91,6 @@ section .modul .dropdown:hover .dropdown-menu {
 }
 
 section .modul .dropdown:hover .dropdown-menu li:hover {
-  background-color: #8b8686be;
+  background-color: #8b868655;
 }
 /*# sourceMappingURL=style.css.map */
