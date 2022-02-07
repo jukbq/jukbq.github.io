@@ -1,0 +1,67 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(slider.css);
+@import url(slider2.css);
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(section4.css);
+@import url(footer.css);
+a,
+p {
+    font-family: 'Kanit', sans-serif;
+}
+
+.l_space {
+    letter-spacing: 7px;
+    font-size: 14px;
+}
+
+header,
+main,
+footer {
+    width: 1440px;
+    margin: auto;
+}
+
+
+/*--------------------------1500--------------------------*/
+
+@media screen and (max-width: 1500px) {
+    header,
+    main,
+    footer {
+        width: 1240px;
+        margin: auto;
+    }
+}
+
+
+/*--------------------------1300--------------------------*/
+
+@media screen and (max-width: 1300px) {
+    header,
+    main,
+    footer {
+        width: 768px;
+        margin: auto;
+    }
+    .l_space {
+        font-size: 12px;
+    }
+}
+
+
+/*--------------------------830--------------------------*/
+
+@media screen and (max-width: 830px) {
+    header,
+    main,
+    footer {
+        width: 320px;
+        margin: auto;
+    }
+    .l_space {
+        font-size: 12px;
+    }
+}

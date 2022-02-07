@@ -1,0 +1,124 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1440px;
+    height: 120px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    position: absolute;
+    width: 29px;
+    height: 19px;
+    top: 49px;
+    left: 47px;
+    z-index: 2;
+}
+
+.menu>li {
+    height: 70px;
+    display: block;
+    cursor: pointer;
+}
+
+.cross {
+    width: 24px;
+    height: 19px;
+    filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 1.75));
+    margin-bottom: 27px;
+    background-image: url(../img/menu_icon.png);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.drop_menu {
+    display: none;
+    width: 280px;
+    height: 302px;
+    padding-top: 54px;
+    padding-left: 66px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px #0000002b;
+}
+
+.drop_menu li {
+    font-size: 16px;
+    font-weight: 500;
+    width: 339px;
+    height: 37.5px;
+    margin-left: 4px;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.drop_menu>li>a {
+    line-height: 0.5px;
+    color: black;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    display: block;
+}
+
+ul:hover .cross {
+    background-position: 0px 23px;
+}
+
+
+/*-----------------------------adaptive--------------------------*/
+
+
+/*--------------------------1500--------------------------*/
+
+@media screen and (max-width: 1500px) {
+    header {
+        width: 1240px;
+        height: 120px;
+    }
+    .menu {
+        top: 51px;
+        left: 51px;
+    }
+}
+
+
+/*--------------------------1300--------------------------*/
+
+@media screen and (max-width: 1300px) {
+    header {
+        width: 768px;
+        height: 65px;
+    }
+    .menu {
+        top: 23px;
+        left: 23px;
+    }
+    .logo img {
+        width: 105px;
+        height: 20px;
+    }
+}
+
+
+/*--------------------------830--------------------------*/
+
+@media screen and (max-width: 830px) {
+    header {
+        width: 320px;
+        height: 65px;
+    }
+    .menu {
+        top: 23px;
+        left: 23px;
+    }
+    .logo img {
+        width: 105px;
+        height: 20px;
+    }
+}

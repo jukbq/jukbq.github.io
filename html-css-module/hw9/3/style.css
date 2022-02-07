@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/1069896.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.earth {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.earth img {
+    width: 100%;
+}
+
+.orbi {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /*  border: 1px solid yellow; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -51px;
+    margin: auto;
+    transform: rotateZ( 10deg) translate(-34px) rotateY( -67deg) rotateX( 56deg);
+}
+
+.moon {
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -3px;
+    left: 223px;
+    margin: auto;
+    z-index: 2;
+    animation-name: moon_run;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moon_run {
+    25% {
+        width: 75px;
+        top: 88px;
+        left: 65px;
+    }
+    50% {
+        width: 55px;
+        top: 125px;
+        left: -90px;
+    }
+    60% {
+        z-index: -1;
+    }
+    75% {
+        width: 35px;
+        top: 32px;
+        left: 70px;
+    }
+    90% {
+        z-index: -1;
+    }
+    99% {
+        top: -3px;
+        left: 223px;
+    }
+    100% {
+        width: 55px;
+        transform: rotate(360deg);
+    }
+}

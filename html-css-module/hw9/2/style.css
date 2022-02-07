@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(182, 196, 196);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.circle_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+    background-color: white;
+    animation: shadow_puls_white;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(2) {
+    background-color: red;
+    animation: shadow_puls_red;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(3) {
+    background-color: orangered;
+    animation: shadow_puls_orangered;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(4) {
+    background-color: yellow;
+    animation: shadow_puls_yellow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(5) {
+    background-color: green;
+    animation: shadow_puls_green;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(6) {
+    background-color: lightskyblue;
+    animation: shadow_puls_lightblue;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(7) {
+    background-color: blue;
+    animation: shadow_puls_bluee;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle:nth-child(8) {
+    background-color: blueviolet;
+    animation: shadow_puls_blueviolet;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shadow_puls_white {
+    10% {
+        box-shadow: 0px 0px 14px 5px white;
+    }
+}
+
+@keyframes shadow_puls_red {
+    20% {
+        box-shadow: 0px 0px 14px 5px red;
+    }
+}
+
+@keyframes shadow_puls_orangered {
+    30% {
+        box-shadow: 0px 0px 14px 5px orangered;
+    }
+}
+
+@keyframes shadow_puls_yellow {
+    40% {
+        box-shadow: 0px 0px 14px 5px yellow;
+    }
+}
+
+@keyframes shadow_puls_green {
+    50% {
+        box-shadow: 0px 0px 14px 5px green;
+    }
+}
+
+@keyframes shadow_puls_lightblue {
+    60% {
+        box-shadow: 0px 0px 14px 5px lightskyblue;
+    }
+}
+
+@keyframes shadow_puls_bluee {
+    70% {
+        box-shadow: 0px 0px 14px 5px blue;
+    }
+}
+
+@keyframes shadow_puls_blueviolet {
+    80% {
+        box-shadow: 0px 0px 14px 5px blueviolet;
+    }
+}

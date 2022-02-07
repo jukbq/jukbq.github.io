@@ -1,0 +1,123 @@
+.slide_2 {
+    display: flex;
+    position: relative;
+    width: 1141px;
+    height: 360px;
+    margin: auto;
+    color: white;
+    margin-top: 68px;
+}
+
+.slide_2 img {
+    width: 566px;
+    height: 366px;
+}
+
+.sl2_1_2 {
+    position: relative;
+    width: 581px;
+    height: 226px;
+    padding-top: 135px;
+    padding-left: 113px;
+    background-color: black;
+}
+
+.sl2_1_2 .big_text {
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 1.9px;
+}
+
+.sl2_1_2 a {
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 22px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+    margin-left: 71px;
+}
+
+
+/*-----------------------------adaptive--------------------------*/
+
+
+/*--------------------------1500--------------------------*/
+
+@media screen and (max-width: 1500px) {
+    .slide_2 {
+        width: 941px;
+        height: 360px;
+        margin-top: 60px;
+    }
+    .slide_2 img {
+        width: 476px;
+        height: 366px;
+    }
+    .sl2_1_2 {
+        width: 476px;
+        height: 240px;
+        padding-top: 125px;
+        padding-left: 62px;
+    }
+}
+
+
+/*--------------------------1300--------------------------*/
+
+@media screen and (max-width: 1300px) {
+    .slide_2 {
+        width: 720px;
+        height: 275px;
+    }
+    .slide_2 img {
+        width: 359px;
+        height: 275px;
+    }
+    .sl2_1_2 {
+        width: 306px;
+        height: 186px;
+        padding-top: 89px;
+        padding-left: 89px;
+    }
+    .sl2_1_2 a {
+        margin-left: 0px;
+    }
+    .sl2_1_2 .big_text {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+
+/*--------------------------830--------------------------*/
+
+@media screen and (max-width: 830px) {
+    .slide_2 {
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        height: 422px;
+    }
+    .slide_2 img {
+        width: 320px;
+        height: 245px;
+    }
+    .sl2_1_2 {
+        width: 200px;
+        height: 135px;
+        padding: 40px 60px 0px 60px;
+    }
+    .sl2_1_2 a {
+        margin-left: 0px;
+    }
+    .sl2_1_2 .big_text {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}

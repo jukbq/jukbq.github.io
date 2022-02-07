@@ -1,0 +1,250 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+    background: no-repeat top center;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+    padding: 93px 166px 240px 166px;
+}
+
+.about {
+    padding: 93px 166px 115px 166px;
+}
+
+.skills {
+    padding: 93px 166px 145px 166px;
+    /* padding: 13% 166px 2px 166px; */
+}
+
+.portfolio {
+    padding: 128px 158px 110px 173px;
+    /* padding: 16% 11% 13% 12%; */
+}
+
+thead {
+    padding-bottom: 65px;
+}
+
+.a_portfolio {
+    font-size: 24px;
+}
+
+#navbarNav,
+.link_text,
+p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.heading_text,
+h5 {
+    font-size: 24px;
+}
+
+.h5_skills,
+.h5_portfolio,
+.h5_about {
+    margin-bottom: 86px;
+}
+
+.h5_footer {
+    margin-bottom: 51px;
+}
+
+.heading_text {
+    margin-bottom: 65px;
+}
+
+.scill_box img {
+    width: 350px;
+    height: 340px;
+    margin-right: 125px;
+}
+
+.cell_1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cell_2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.carusel_text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.portfolio img {
+    width: 635px;
+    height: 403px;
+    margin-left: 125px;
+}
+
+footer {
+    background-color: #FFFAF2;
+    padding: 93px 347px 189px 166px;
+    /* padding: 16% 11% 13% 12%; */
+}
+
+.navigation a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 65px 144px 167px 144px;
+    }
+    .about {
+        padding: 58px 144px 101px 144px;
+    }
+    .skills {
+        padding: 75px 144px 134px 144px;
+    }
+    .scill_box img {
+        margin-right: 90px;
+    }
+    .portfolio {
+        padding: 115px 132px 94px 144px;
+        /* padding: 16% 11% 13% 12%; */
+    }
+    footer {
+        padding: 86px 288px 173px 144px;
+        /* padding: 18% 24% 36% 12%; */
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 58px 119px 149px 119px;
+    }
+    .about {
+        padding: 82px 119px 72px 119px;
+    }
+    .skills {
+        padding: 83px 119px 121px 119px;
+    }
+    .portfolio {
+        padding: 102px 109px 83px 119px;
+        /* padding: 16% 11% 13% 12%; */
+    }
+    footer {
+        padding: 65px 238px 123px 149px;
+        /* padding: 18% 24% 36% 12%; */
+    }
+    .scill_box img {
+        margin: auto;
+        margin-bottom: 26px;
+    }
+    .about p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .header_heading {
+        font-size: 46px;
+    }
+    .portfolio img {
+        width: 535px;
+        height: 303px;
+        margin-left: 0px;
+    }
+    .carusel_text {
+        text-align: center;
+    }
+    .h5_skills,
+    .h5_portfolio,
+    .h5_about {
+        margin-bottom: 19px;
+    }
+    .h5_about {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 43px 92px 112px 92px;
+    }
+    .about {
+        padding: 50px 92px 62px 92px;
+    }
+    .skills {
+        padding: 50px 92px 60px 92px;
+    }
+    .portfolio {
+        padding: 94px 84px 77px 92px;
+        /* padding: 16% 11% 13% 12%; */
+    }
+    footer {
+        padding: 65px 189px 123px 92px;
+        /* padding: 18% 24% 36% 12%; */
+    }
+    .about p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .header_heading {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        padding: 33px 69px 85px 69px;
+    }
+    .about {
+        padding: 50px 69px 62px 69px;
+    }
+    .skills {
+        padding: 25px 25px 25px 25px;
+    }
+    .scill_box img {
+        width: 224px;
+        height: 218px;
+    }
+    .cell_1 {
+        font-size: 12px;
+    }
+    .cell_2 {
+        font-size: 12px;
+    }
+    .ab .header_heading {
+        font-size: 24px;
+    }
+    .heading_text {
+        font-size: 13px;
+    }
+    .portfolio {
+        padding: 77px 64px 62px 70px;
+        /* padding: 16% 11% 13% 12%; */
+    }
+    .carusel_text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .portfolio img {
+        width: 308px;
+        height: 195px;
+    }
+    .navigation a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
