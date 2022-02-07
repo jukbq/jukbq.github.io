@@ -1,0 +1,21 @@
+.block{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.b1{
+border: 1px dashed red;
+}
+.b2{
+    background-color: yellow;
+border: 1px dotted red;
+}
+.b3{
+outline: 10px solid blue;
+}
+.b4{
+border-left: 5px solid black ;
+}
+
