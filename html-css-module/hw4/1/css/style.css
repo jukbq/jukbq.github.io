@@ -1,0 +1,42 @@
+@import url(reset.css);
+.arsenal {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+.letter_block {
+    width: 14.28%;
+    height: 100%;
+}
+
+p {
+    padding-top: 260px;
+}
+
+.box_a {
+    background-image: linear-gradient(#ea2139, #9d2821);
+}
+
+.box_r {
+    background-image: linear-gradient(#3c5c7d, #b96b83);
+}
+
+.box_s {
+    background-image: linear-gradient(#43dfb3, #f7863a);
+}
+
+.box_e {
+    background-image: linear-gradient(#584137, #2e7443);
+}
+
+.box_n {
+    background-image: linear-gradient(#ed4566, #fee7b9);
+}
+
+.box_l {
+    background-image: linear-gradient(#272727, #ae9a8d);
+}
