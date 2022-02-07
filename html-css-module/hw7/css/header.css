@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1440px;
+    height: 123px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    position: absolute;
+    top: 46px;
+    left: 55px;
+    z-index: 2;
+}
+
+.menu>li {
+    width: 339px;
+    height: 70px;
+    display: block;
+    cursor: pointer;
+}
+
+.cross {
+    transform: rotate(0deg);
+    filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 1.75));
+    margin-bottom: 27px;
+    transition: all 0.5s ease;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.drop_menu {
+    visibility: hidden;
+    opacity: 0;
+    width: 280px;
+    height: 302px;
+    padding-top: 54px;
+    padding-left: 66px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px #0000002b;
+}
+
+.drop_menu li {
+    font-size: 16px;
+    font-weight: 500;
+    width: 339px;
+    height: 37.5px;
+    margin-left: 4px;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.drop_menu>li>a {
+    line-height: 0.5px;
+    color: black;
+}
+
+ul li ul {
+    transition: all 0.7s;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+ul:hover .cross {
+    transform: rotate(45deg);
+}

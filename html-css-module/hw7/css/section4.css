@@ -1,0 +1,42 @@
+.section_4>.s_text_3 {
+    margin-top: 37px;
+}
+
+.s_text_3 {
+    margin-top: 68px;
+    margin-bottom: 20px;
+    letter-spacing: 0.6px;
+    font-size: 17px;
+}
+
+.section_4 .foto_block {
+    margin-top: 34px;
+}
+
+.section_4 .s_2_text {
+    margin-top: 21px;
+}
+
+.section_4 .s_2_text a {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.section_4>div.s_2_text>div:nth-child(1)>div.s2_ta_2.t1 {
+    margin-top: 29px;
+    margin-left: 1px;
+}
+
+.section_4 .s2_ta_2 {
+    margin-top: 30px;
+}
+
+.section_4>div.see_all_batton {
+    margin-top: 36px;
+}
+
+.section_4 {
+    margin-bottom: 98px;
+}

@@ -1,0 +1,33 @@
+.s_text_3 {
+    margin-top: 68px;
+    letter-spacing: 0.6px;
+    font-size: 17px;
+}
+
+.section_3 .foto_block {
+    margin-top: 34px;
+}
+
+.section_3 .s_2_text {
+    margin-top: 13px;
+}
+
+.section_3 .s_2_text a {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.section_3>div.s_2_text>div:nth-child(1)>div.s2_ta_2.t1 {
+    margin-top: 36px;
+    margin-left: 1px;
+}
+
+.section_3 .s2_ta_2 {
+    margin-top: 38px;
+}
+
+.section_3>div.see_all_batton {
+    margin-top: 41px;
+}
