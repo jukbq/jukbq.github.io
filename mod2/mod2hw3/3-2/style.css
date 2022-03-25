@@ -1,0 +1,21 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li {
+    width: 50px;
+    margin: 0 10px 0 10px;
+    border-right: 0.5px solid black;
+    border-left: 0.5px solid black;
+    text-align: center;
+}
