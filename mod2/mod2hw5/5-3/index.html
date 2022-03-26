@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">maxNum</span><span class="hljs-params" style="color: rgb(180, 90, 60);">(<span class="hljs-rest_arg">...arg</span>)</span> </span>{
+    let max = arg[<span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>];
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (let i = <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>; i &lt; arg.length; i++) {
+        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (max &lt; arg[i]) max = arg[i];
+    }
+    document.write(`&lt;h1&gt;Максимальне число - ${max}&lt;/h1&gt;`)
+}
+maxNum(<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">60</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-55</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>)</pre>
+
+    <h1>
+        Пошук максимального числа - 1, 2, -5, 12, 60, -55, 5, 10, 12, 4
+    </h1>
+</body>
+<script src="main.js"></script>
+
+</html>

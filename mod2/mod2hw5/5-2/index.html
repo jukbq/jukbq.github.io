@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> num = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"Введіть ціле чисор"</span>);
+num = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">parseInt</span>(num, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>);
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">priNum</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> res = <span class="hljs-string" style="color: rgb(75, 139, 139);">''</span>
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (num == <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>) {
+        res = <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${num}</span> -  Прсте число`</span>
+    }
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> i = <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>; i &lt; num; i++) {
+        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (num % i === <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
+            res = <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${num}</span> -  Число не є простим`</span>
+            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">break</span>
+        }
+        res = <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${num}</span> -  Прсте число`</span>
+    };
+    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt;<span class="hljs-subst">${res}</span>&lt;/h2&gt;`</span>)
+};
+
+
+priNum();</pre>
+</body>
+<script src="main.js"></script>
+
+</html>
