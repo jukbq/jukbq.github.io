@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> person = {
+    firstName: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivan'</span>,
+    secondName: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivanov'</span>,
+    showData: <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
+        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(
+            <span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt; Ім\'я:  <span class="hljs-subst">${this.firstName}</span>&lt;/h2&gt;   &lt;h2&gt;Прізвише:  <span class="hljs-subst">${this.secondName}</span>,&lt;/h2&gt; `</span>)
+    }
+}
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> newPerson = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Object</span>.assign({}, person)
+newPerson.firstName = <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petro'</span>;
+newPerson.secondName = <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petriv'</span>;
+
+person.showData();
+newPerson.showData();</pre>
+</body>
+<script src="main.js"></script>
+
+</html>
