@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">password</span> = '<span class="hljs-number" style="color: rgb(180, 90, 60);">1111</span>'
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">i</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>;
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">ask</span> = <span class="hljs-string" style="color: rgb(75, 139, 139);">"Введіть пароль"</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">a</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>
+do {
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">pass</span> = prompt(ask);
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-attr">pass</span> == password) {
+        <span class="hljs-attr">a</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
+    }
+    i--;
+    <span class="hljs-attr">ask</span> = <span class="hljs-string" style="color: rgb(75, 139, 139);">"Пароль не вірний, залишилось спроб "</span> + i
+} while (i &gt; <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span> &amp;&amp; <span class="hljs-attr">a</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>)
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-attr">a</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>) {
+    document.write('&lt;h1&gt;Запрошуємо на сайт!&lt;/h1&gt;');
+} <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> {
+    document.write('&lt;h1&gt;Будь ласка спробуйте пізніше!&lt;/h1&gt;');
+}</pre>
+</body>
+<script src="main.js"></script>
+
+</html>
