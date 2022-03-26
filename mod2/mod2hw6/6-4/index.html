@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">a</span> = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"Введіть ціле чисорл"</span>);
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">b</span> = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"Введіть ціле чисор"</span>);
+<span class="hljs-attr">a</span> = parseInt(a, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>);
+<span class="hljs-attr">b</span> = parseInt(b, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>);
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (a &gt; b) {
+    <span class="hljs-attr">b</span> = a;
+    <span class="hljs-attr">a</span> = b;
+};
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">askPriNum</span> = function() {
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-attr">a</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>) {
+        <span class="hljs-attr">a</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>
+    } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> {
+        for (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">i</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>; i &lt; a; i++) {
+            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (a % <span class="hljs-attr">i</span> === <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
+                a <span class="hljs-attr">-=</span> <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
+                break
+            } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> {
+                <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">x</span> = a / i;
+                <span class="hljs-attr">a</span> = x * i;
+                return a <span class="hljs-attr">-=</span> <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
+
+            };
+        };
+        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-attr">b</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>) {
+            <span class="hljs-attr">b</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>;
+        } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> {
+            for (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">i</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>; i &lt; b; i++) {
+                <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (b % <span class="hljs-attr">i</span> === <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
+                    b <span class="hljs-attr">-=</span> <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
+                    break
+                } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> {
+                    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">x</span> = b / i;
+                    <span class="hljs-attr">b</span> = x * i;
+                    break
+
+                }
+            };
+        };
+    };
+};
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">diap</span> = function() {
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-attr">res</span> = <span class="hljs-string" style="color: rgb(75, 139, 139);">'';
+    if (a == 2) {
+        a += 1;
+    };
+    for (j = a; j &lt;= b; j += 2) {
+        document.write(`&lt;h1&gt; <span class="hljs-subst">${j}</span> &lt;/h1&gt;`)
+    };
+
+};
+askPriNum()
+diap()</span></pre>
+</body>
+<script src="main.js"></script>
+
+</html>
