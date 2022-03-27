@@ -1,0 +1,53 @@
+.wrap {
+    width: 800px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box, .cont {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    
+}
+
+.cont:nth-of-type(1) .box {
+    background-color: red;
+}
+
+.cont:nth-of-type(2) .box {
+    background-color: orange;
+}
+
+.cont:nth-of-type(3) .box {
+    background-color: yellow;
+}
+
+.cont:nth-of-type(4) .box {
+    background-color: green;
+}
+
+.cont:nth-of-type(5) .box {
+    background-color: blue;
+}
+
+.fon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff00;
+    z-index: -1;
+}
+
+.bigBox {
+    position: absolute;
+    z-index: 3;
+   
+}

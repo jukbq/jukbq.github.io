@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">arrToString</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);">arr</span>) </span>{
+
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> r = arr.join(<span class="hljs-string" style="color: rgb(75, 139, 139);">'  '</span>);
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> r;
+
+};
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> arr1 = arrToString([<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>]);
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> arr2 = arrToString([<span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">200</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3333</span>]);
+
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr1}</span>&lt;/h1&gt;`</span>)
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr2}</span>&lt;/h1&gt;`</span>)
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">console</span>.log(arr1);
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">console</span>.log(arr2);</pre>
+</body>
+<script src="main.js"></script>
+
+</html>

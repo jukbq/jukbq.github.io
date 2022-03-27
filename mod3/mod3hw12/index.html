@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------Завдання 1. forEach------------*/</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr1 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">7</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">8</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">9</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">15</span>];
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> summ = <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>
+arr1.forEach(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);">e, i</span>) </span>{
+    summ += +e
+})
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${summ}</span>&lt;/h1&gt;`</span>)
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------Завдання 2. Map----------------*/</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr2 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">7</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">8</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">9</span>];
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> square = arr2.map(e =&gt; <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Math</span>.pow(e, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>));
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${square}</span>&lt;/h1&gt;`</span>)
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------ Завдання 3. Every--------------*/</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr3 = [
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivan'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ukraine'</span> },
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petro'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ukraine'</span> },
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Miguel'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Cuba'</span> },
+
+];
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> csheck3 = arr3.every(i =&gt; i.country === <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ukraine'</span>);
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${csheck3}</span>&lt;/h1&gt;`</span>)
+
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------Завдання 4. Some----------------*/</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr4 = [
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivan'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ukraine'</span> },
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petro'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ukraine'</span> },
+    { name: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Miguel'</span>, country: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Cuba'</span> },
+
+];
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> csheck4 = arr3.some(i =&gt; i.country === <span class="hljs-string" style="color: rgb(75, 139, 139);">'Cuba'</span>);
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${csheck4}</span>&lt;/h1&gt;`</span>)
+
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------Завдання 5. Filter-------------*/</span>
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr5 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'string'</span>, [<span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>], <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, [<span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">7</span>]];
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> index = [<span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>]
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> array2 = arr5.filter((e, i) =&gt; index.indexOf(i) &gt; <span class="hljs-number" style="color: rgb(180, 90, 60);">-1</span>)
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${array2}</span>&lt;/h1&gt;`</span>)
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*------------------Завдання 6. Reduce--------------*/</span>
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr6z1 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>];
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> sum = arr6z1.reduce((a, b) =&gt; {
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (b == <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>)
+        a.stop = <span class="hljs-literal" style="color: rgb(180, 90, 60);">true</span>;
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (!a.stop)
+        a.total += b;
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> a;
+}, { stop: <span class="hljs-literal" style="color: rgb(180, 90, 60);">false</span>, total: <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span> }).total;
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${sum}</span>&lt;/h1&gt;`</span>)
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*-------------------*/</span>
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr6z2 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>];
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> sum2 = arr6z2.reduce((a, b, x) =&gt; {
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (a &lt; <span class="hljs-number" style="color: rgb(180, 90, 60);">11</span>)
+        a += b
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> [x]
+});
+
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${sum2}</span>&lt;/h1&gt;`</span>)
+
+
+<span class="hljs-comment" style="color: rgb(126, 119, 119);">/*----------- Завдання 7. Будь яким методом-----------*/</span>
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr7 = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-11</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">23</span>];
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> rez7 = arr7.filter(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);">e, i, arr</span>) </span>{
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (e &gt; <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
+        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${Math.sqrt(e)}</span>&lt;/h1&gt;`</span>)
+
+    }
+})</pre>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(226, 223, 223);
+}
+
+.forma {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.check {
+    margin-right: 153px;
+}
+
+.log, .sub {
+    width: 347px;
+    height: 43px;
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid rgb(92, 89, 89);
+}
+
+.sub {
+    background: rgb(48, 114, 238);
+    color: oldlace;
+}
+
+.signup {
+    display: none;
+    position: fixed;
+    width: 427px;
+    height: 315px;
+    background-color: rgb(236, 232, 225);
+    border-radius: 5px;
+    border: 1px solid black;
+    top: 30px;
+    left: 30%;
+}
+
+.color1 {
+    height: 140px;
+    background-color: rgb(67, 226, 67);
+    color: white;
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+
+.se {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(238, 163, 93);
+    color: white;
+    outline: none;
+    border: 0.5px solid rgb(92, 89, 89);
+}

@@ -1,0 +1,67 @@
+#keyboard{
+    width: 600px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    background-color: rgb(17, 3, 3);
+    margin: auto;
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    
+}
+
+#text{
+    width: 500px;
+    height: 150px;
+    resize: none;
+    border: 2px solid silver;
+    background: white;
+}
+
+ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   
+}
+
+li{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: rgb(193, 240, 237);
+    background-color: rgb(190, 12, 12);
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px  rgb(187, 16, 16);
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.Backspace{
+width: 70px;
+}
+.Tab{
+    width: 68px;
+}
+.CapsLock,
+.Enter{
+    width: 65px;
+}
+.ShiftLeft{
+    width: 65px;
+}
+.ShiftRight{
+    width: 95px;
+}
+.ControlLeft,
+.AltLeft,
+.AltRight,
+.ControlRight{
+    width: 60px;
+}
+.Space{
+    width: 230px;
+}

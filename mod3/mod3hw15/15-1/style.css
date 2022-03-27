@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.disp {
+    width: 127px;
+    height: 269px;
+    border-radius: 8px;
+    margin: auto;
+    background-color: green;
+}
+
+.disp2 {
+    position: relative;
+    width: 127px;
+    height: 269px;
+    border-radius: 8px;
+    margin: auto;
+    background-color: black;
+    display: none;
+}
+
+.phone {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 340px;
+    background: url(img/phone_hand_PNG91.png) no-repeat;
+    top: -275px;
+    left: 58px;
+    margin: auto;
+}
+
+.min {
+    position: absolute;
+    width: 12px7;
+    color: rgb(255, 253, 253);
+    top: 81px;
+    left: 65px;
+}
+
+.m1 {
+    display: none;
+}

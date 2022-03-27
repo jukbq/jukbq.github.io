@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">removeDuplicates</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);">arr</span>) </span>{
+
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> r = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Set</span>(arr);
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> ar = [...r]
+    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> ar
+
+}
+
+
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> arr1 = removeDuplicates([<span class="hljs-string" style="color: rgb(75, 139, 139);">'html'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'css'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'html'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'js'</span>]);
+<span class="hljs-keyword" style="color: rgb(132, 100, 196);">const</span> arr2 = removeDuplicates([<span class="hljs-string" style="color: rgb(75, 139, 139);">'html'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'css'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'js'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'html'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'js'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'python'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'js'</span>, <span class="hljs-string" style="color: rgb(75, 139, 139);">'scss'</span>]);
+
+
+
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr1}</span>&lt;/h1&gt;&lt;/h1&gt;`</span>)
+<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr2}</span>&lt;/h1&gt;&lt;/h1&gt;`</span>)</pre>
+</body>
+<script src="main.js"></script>
+
+</html>

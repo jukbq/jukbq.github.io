@@ -27,6 +27,12 @@ section {
             background-color: #0400ff2a;
         }
     }
+    >:nth-child(3) {
+        background-color: #19e79165;
+        .list-group-item {
+            background-color: #04422e2a;
+        }
+    }
     .modul {
         width: 22%;
         height: auto;

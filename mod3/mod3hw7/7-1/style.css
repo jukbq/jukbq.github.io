@@ -1,0 +1,28 @@
+button{
+    box-shadow: 0 3px 4px black;
+}
+.box{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 0 1px 3px black;
+    margin: auto;
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+   
+
+    
+}
+.block{
+    width: 95px;
+    height: 60px;
+    border: 1px solid black;
+    
+    
+}
+body{
+    width: 100%;
+    background: no-repeat;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--                      КОНТЕЙНЕР 1                         -->
+    <div class="container">
+
+        <!--         Блок результатів      -->
+        <div class="block topBlock">
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <!--         Центральні кнопки      -->
+        <div class="centrBlock">
+            <input type="button" value="Редагувати" class="btnEdit">
+            <input type="button" value="Стиль" class="batSty">
+        </div>
+
+        <!--       Нижній блок          -->
+        <div class="block bottomBlock">
+
+            <!--         Блок редагування      -->
+            <div class="editBlock">
+                <textarea class="editArea"></textarea>
+                <input type="button" value="Додати" class="batAdd">
+                <input type="button" value="Зберегти" class="batSv">
+            </div>
+
+            <!--         Блок стилю      -->
+            <div class="styleBlock">
+                <form name="style">
+                    <!--         Розмір шрифта      -->
+                    <div class="fSize">
+                        <h4>Розмір шрифта: </h4>
+                        <label><input type="radio" class="size" name="size" value="12px">12px</label>
+                        <label><input type="radio" class="size" name="size" value="14px" checked>14px</label>
+                        <label><input type="radio" class="size" name="size" value="16px">16px</label>
+                        <label><input type="radio" class="size" name="size" value="18px">18px</label>
+                        <label><input type="radio" class="size" name="size" value="20px">20px</label>
+                    </div>
+                    <br>
+                    <!--         Тип шрифта      -->
+                    <div class="fFam">
+                        <h4>Тип шрифта: </h4>
+                        <select class="ff">
+                            <option value="" class="ff1">Оберіть</option>
+                            <option value="cursive">Cursive</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="monospace">Monospace</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </div>
+                    <br>
+                    <!--         Вибір кольрів      -->
+                    <h4>Колір: </h4>
+                    <div class="color">
+                        <input type="button" value="Колір текста" class="txtCol">
+                        <input type="button" value="Колір фону" class="bcgCol">
+                    </div>
+                    <div class="colorBox">
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                        <diV class="colCell"></diV>
+                    </div>
+                    <br>
+                    <!--        Стиль шрифта      -->
+                    <div class="fStyke">
+                        <label><input type="checkbox" class="fBold"> Жирний</label>
+                        <label><input type="checkbox" class="fItalic"> Курсив</label>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!--                      КОНТЕЙНЕР 2                         -->
+    <div class="container2">
+        <div class="block cont2">
+            <h2>Що ви хочете створити?</h2>
+            <label><input type="radio" class="tab" name="rad"> Таблиця</label>
+            <label><input type="radio" class="list" name="rad">Список</label>
+            <br>
+            <br>
+
+
+            <!--                     Таблиця                         -->
+            <div class="cteatTable">
+                <form name="tabl">
+                    <label>Стрічки</label>
+                    <input type="text" name="countTr" class="countTr">
+                    <label>Комірка</label>
+                    <input type="text" name="countTd" class="countTd">
+                    <h4>Стиль таблиці</h4>
+                    <label>Ширина комірки</label>
+                    <input type="text" name="widthTd" class="widthTd">
+                    <br>
+                    <label>Висота комірки</label>
+                    <input type="text" name="heightTd" class="heightTd">
+                    <label>Товшина лінії</label>
+                    <input type="text" name="widthBr" class="widthBr">
+                    <label>Тип лінії</label>
+                    <select name="typBorder" class="tb">
+                        <option value="solid">Solid</option>
+                        <option value="double">Double</option>
+                        <option value="groove">Groove</option>
+                        <option value="ridge">Ridge</option>
+                        <option value="inset">Inset</option>
+                        <option value="outset">Outset</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="dashed">Dashed</option>
+                    </select>
+                    <label>Колір</label>
+                    <select name="colorBord" class="cb">
+                        <option value="red">Червоний</option>
+                        <option value="orange">Помаранчеіий</option>
+                        <option value="yellow">Жовтий</option>
+                        <option value="green">Зелений</option>
+                        <option value="blue">Блакитний</option>
+                        <option value="darkblue">Синій</option>
+                        <option value="violet">Фіолетовий</option>
+                    </select>
+                </form>
+                <br>
+                <input type="button" value="Створити" class="crtTable">
+            </div>
+            <!--                     Список                         -->
+            <br>
+            <div class="creatList">
+                <form name="list">
+                    <label>Кількість Li</label>
+                    <input type="text" name="countLi" class="countLi">
+                    <br>
+                    <br>
+                    <label>Стиль списка</label>
+                    <select name="listStyle" class="listStyle">
+                        <option value="circle">Circle</option>
+                        <option value="disc">Disc</option>
+                        <option value="square">Square</option>
+                    </select>
+                </form>
+                <br>
+                <input type="button" value="Створити" class="crtList">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

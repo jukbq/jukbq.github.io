@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(248, 230, 196);
+}
+h3{
+    color: #c39967;
+    font-style: italic;
+}
+.leftBox h3{
+    text-align: center;
+}
+ul{
+   
+    list-style-image: url(img/2.png)
+}
+li{
+    color: #c39967;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+#note{
+    display: block;
+    width: 595px;
+    height: 405px;
+    margin: 0 auto;
+    background-image: url(img/fon.png);
+   
+}
+.leftBox{
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+    height: 400px;
+    
+}
+#checkbox{
+    display: block;
+}
+.rightBox{
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+    width: 250px;
+    height: 150px;
+   
+}
+.note{
+    width: 150px;
+    border: none;
+    color: #c39967;
+    font-style: italic;
+    border-bottom: 1px solid #c39967;
+    background: none;
+}
+.note:focus{
+    outline: none;
+    border-bottom: 2px solid #c39967;
+    background: none;
+}
+.add{
+    width: 80px;
+    height: 20px;
+    margin-top: 10px;
+    color: #c39967;
+    font-style: italic;
+    background-color: #f5ebe1;
+    border: 1px solid #c39967 ;
+}
+.add:focus{
+    outline: none;
+}
+
+.err1{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    border: 3px solid red;
+    border-radius: 5px;
+    background-color: rgba(235, 132, 132, 0.774);
+    
+}
+.err2{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    border: 3px solid red;
+    border-radius: 5px;
+    background-color: rgba(235, 132, 132, 0.774);
+    
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    
+    
+    
+}
+.close{
+    float: left;
+   margin-left: 280px;
+cursor: pointer;
+}

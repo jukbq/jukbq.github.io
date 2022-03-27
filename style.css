@@ -28,6 +28,12 @@ section > :nth-child(2) {
 section > :nth-child(2) .list-group-item {
   background-color: #0400ff2a;
 }
+section > :nth-child(3) {
+  background-color: #19e79165;
+}
+section > :nth-child(3) .list-group-item {
+  background-color: #04422e2a;
+}
 section .modul {
   width: 22%;
   height: auto;

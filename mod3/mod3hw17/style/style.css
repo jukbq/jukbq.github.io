@@ -1,0 +1,185 @@
+.tiner {
+    width: 100px;
+    height: 70px;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.butt {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.button {
+    width: 95px;
+    height: 30px;
+    margin: auto;
+    box-shadow: 0 2px 5px 0 black;
+    border-radius: 3px;
+    background-color: rgba(248, 78, 55, 0.527);
+    color: cornsilk;
+    font-size: 13px;
+}
+
+.bigBox {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.imgbox {
+    width: 260px;
+    height: 260px;
+    position: relative;
+    box-shadow: 0 0 8px 0 black;
+    margin: 20px;
+}
+
+#right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pazzl {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-image: url(../img/hctyh.jpg);
+    color: rgba(210, 180, 140, 0);
+}
+
+.clone {
+    width: 64px;
+    height: 64px;
+    background-color: lawngreen;
+}
+
+.emptySpace {
+    border: medium dotted red;
+    height: 36px;
+    margin: 4px
+}
+
+#p1 {
+    background-position: 0px 0px
+}
+
+#p2 {
+    background-position: 195px 0px
+}
+
+#p3 {
+    background-position: 130px 0px
+}
+
+#p4 {
+    background-position: 65px 0px
+}
+
+#p5 {
+    background-position: 0px 195px
+}
+
+#p6 {
+    background-position: 195px 195px
+}
+
+#p7 {
+    background-position: 130px 195px
+}
+
+#p8 {
+    background-position: 65px 195px
+}
+
+#p9 {
+    background-position: 0px 130px
+}
+
+#p10 {
+    background-position: 195px 130px
+}
+
+#p11 {
+    background-position: 130px 130px
+}
+
+#p12 {
+    background-position: 65px 130px
+}
+
+#p13 {
+    background-position: 0px 65px
+}
+
+#p14 {
+    background-position: 195px 65px
+}
+
+#p15 {
+    background-position: 130px 65px
+}
+
+#p16 {
+    background-position: 65px 65px
+}
+
+.modShad {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(3, 3, 3, 0.438);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.modWin {
+    width: 400px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(233, 225, 225);
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 0 15px black;
+    position: relative;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lmBatt,
+.rmBatt {
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    color: honeydew;
+}
+
+.lmBatt {
+    background-color: red;
+}
+
+.rmBatt {
+    background-color: green;
+}
+
+.display {
+    display: flex;
+}

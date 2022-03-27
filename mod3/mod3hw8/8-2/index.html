@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="cap">
+            <h2>Створіть свій аккаунт</h2>
+        </div>
+
+        <div id="name">
+            <form name="name">
+                <label for="fName">Ім'я:</label>
+                <br>
+                <input type="text" class="log" name="fname" placeholder="ім'я" value="">
+                <br> <br>
+                <label for="sName">Прізвище:</label>
+                <br>
+                <input type="text" class="log" name="sname" placeholder="прізвище" value="">
+                <br> <br>
+                <label for="email">Електронна пошта:</label>
+                <br>
+                <input type="text" class="log" name="email" placeholder="name@mail.com" value="">
+                <br> <br>
+            </form>
+            <form name="sex">
+                <input type="radio" name="sex" id="male" value="Чоловік">
+                <label for="male"> Чоловік</label>
+                <input type="radio" name="sex" id="female" value="Жінка">
+                <label for="female"> Жінка</label>
+            </form>
+
+            <br>
+            <form name="prof">
+                <label for="prof">Спеціалізація</label><br>
+                <select id="sel">
+                    <option value="">Оберіть</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="QC/QA">QC/QA</option>
+                </select>
+            </form>
+
+            <br>
+            <form name="agr">
+                <input type="checkbox" name="ok" id="ok">
+                <label for="ok">Я погоджуюсь з умовами угоди</label>
+            </form>
+
+            <br>
+            <input name="submit" type="button" class="sub" value="ВІДПРАВИТИ" disabled>
+
+        </div>
+
+    </div>
+    <div id="tbox">
+        <div id="tcap"></div>
+        <div id="img"></div>
+        <div class="fi">
+            <h3 class="x" id="tfName"></h3>
+            <h3>&#160</h3>
+            <h3 class="x" id="tsName"></h3>
+            <br>
+            <p id="mail"></p>
+            <br>
+            <p id="ask"></p>
+        </div>
+        <hr>
+        <br>
+        <input type="button" value="Вмхід" id="out">
+        <br>
+        <div class="footer"></div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
