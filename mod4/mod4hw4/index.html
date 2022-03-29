@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;"><span class="hljs-class"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">class</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">Worker</span> </span>{
+    constructor(firstName, secondName, rate, days) {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.firstName = firstName;
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.secondName = secondName;
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.rate = rate;
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.days = days;
+
+    }
+    getSalary() {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.rate * <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.days
+    }
+
+}
+
+<span class="hljs-keyword" style="color: rgb(107, 107, 184);">const</span> worker1 = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> Worker(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Василь'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'Пупкін'</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">500</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">22</span>);
+document.write(`&lt;h2&gt; Ім\`я: ${worker1.firstName} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt; Поізвище: ${worker1.secondName} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt; Плата в день: ${worker1.rate} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt; Робочих днів: ${worker1.days} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt; Зарплата ${worker1.getSalary()} &lt;/h2&gt;`)
+
+
+<span class="hljs-comment" style="color: rgb(113, 149, 168);">/*----------------------------------------------*/</span>
+
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">class</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">MyString</span> </span>{
+
+
+    reverse(word) {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word.split(<span class="hljs-string" style="color: rgb(86, 140, 59);">""</span>).reverse().join(<span class="hljs-string" style="color: rgb(86, 140, 59);">""</span>)
+    }
+    ucFirst(word) {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word[<span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>].toUpperCase() + word.slice(<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>);
+    }
+    ucWords(word) {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word.toLowerCase().split(<span class="hljs-string" style="color: rgb(86, 140, 59);">' '</span>).map(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(word)</span> </span>{
+                <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word[<span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>].toUpperCase() + word.substr(<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>);
+            })
+            .join(<span class="hljs-string" style="color: rgb(86, 140, 59);">' '</span>);
+    }
+
+}
+
+let str = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> MyString()
+
+document.write(`&lt;h2&gt; *********************************** &lt;/h2&gt;`)
+document.write(`&lt;h2&gt;  ${str.reverse(<span class="hljs-string" style="color: rgb(86, 140, 59);">'IVAN'</span>)} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt;${str.ucFirst(<span class="hljs-string" style="color: rgb(86, 140, 59);">'arsenal'</span>)} &lt;/h2&gt;`)
+document.write(`&lt;h2&gt;  ${str.ucFucWordsirst(<span class="hljs-string" style="color: rgb(86, 140, 59);">'arsenal arsenal arsenal'</span>)} &lt;/h2&gt;`)</pre>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
