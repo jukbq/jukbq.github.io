@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">CoffeeMake</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(type)</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.type = type;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.turnOn = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Початок роботи'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.turnOff = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Кава готова '</span>;
+
+
+}
+CoffeeMake.prototype.on = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    document.write(`&lt;h1&gt; ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.type},  ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.turnOn} &lt;/h1&gt;`)
+
+}
+CoffeeMake.prototype.off = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+        document.write(`&lt;h1&gt; ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.turnOff } &lt;/h1&gt;`)
+
+    }
+    <span class="hljs-comment" style="color: rgb(113, 149, 168);">/*-------------------------Drip------------------------------------*/</span>
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">Drip</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(type, turnOn)</span> </span>{
+    CoffeeMake.call(<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>, type, turnOn);
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Нагрів води'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Запарювання кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Подача кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Підігрів кави'</span>
+}
+Drip.prototype = Object.create(CoffeeMake.prototype);
+Drip.prototype.constuctor = Drip;
+
+Drip.prototype.work = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    console.log(`
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating}`);
+}
+
+let drip = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> Drip(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Крапельна'</span>)
+
+drip.on()
+drip.work()
+drip.off()
+
+
+<span class="hljs-comment" style="color: rgb(113, 149, 168);">/*-------------------------Holder------------------------------------*/</span>
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">Holder</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(type, turnOn, )</span> </span>{
+    CoffeeMake.call(<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>, type, turnOn);
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.compressedness = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Первырка спресованості'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Нагрів води'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Запарювання кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Подача кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.inningMilk = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Подача молока'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Підігрів кави'</span>
+}
+Holder.prototype = Object.create(CoffeeMake.prototype);
+Holder.prototype.constuctor = Holder;
+
+Holder.prototype.work = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    console.log(`
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.compressedness},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.inningMilk}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating}`);
+}
+
+let holder = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> Holder(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Ріжкова'</span>)
+
+holder.on()
+holder.work()
+holder.off()
+
+<span class="hljs-comment" style="color: rgb(113, 149, 168);">/*-------------------------Cofeem-----------------------------------*/</span>
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">Cofeem</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(type, turnOn)</span> </span>{
+    CoffeeMake.call(<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>, type, turnOn);
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.grind = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Помол зерен кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.grindSize = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Розмір помолу зерен'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.strength = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Обрати міцність кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Нагрів води'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Запарювання кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Подача кави'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.inningMilk = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Подача молока'</span>;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating = <span class="hljs-string" style="color: rgb(86, 140, 59);">'Підігрів кави'</span>
+}
+Cofeem.prototype = Object.create(CoffeeMake.prototype);
+Cofeem.prototype.constuctor = Cofeem;
+
+Cofeem.prototype.work = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    console.log(`
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.grind},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.grindSize},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.strength},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heat},
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.steaming}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.innings}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.inningMilk}, 
+    ${<span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.heating}`);
+}
+
+let cofeem = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> Cofeem(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Каво-машин'</span>)
+
+cofeem.on()
+cofeem.work()
+cofeem.off()</pre>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
