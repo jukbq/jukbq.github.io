@@ -3,61 +3,87 @@ header {
   height: 80px;
   border: 0.5px solid #80808081;
   background-color: #e4e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
   width: 100vw;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 50px 20px;
 }
+
 section > :nth-child(1) {
   background-color: #ffa60065;
 }
+
 section > :nth-child(1) .list-group-item {
   background-color: #ffa6002a;
 }
+
 section > :nth-child(2) {
   background-color: #0400ff65;
 }
+
 section > :nth-child(2) .list-group-item {
   background-color: #0400ff2a;
 }
+
 section > :nth-child(3) {
   background-color: #19e79165;
 }
+
 section > :nth-child(3) .list-group-item {
   background-color: #04422e2a;
 }
+
 section .modul {
   width: 22%;
   height: auto;
   border: 1px solid black;
   border-radius: 5px;
 }
+
 section .modul h3 {
   width: 100%;
   height: auto;
   border-bottom: 1px solid black;
   text-align: center;
 }
+
 section .modul .navbar-nav {
   color: #000000;
 }
+
 section .modul .navbar-nav .dropdown {
   height: auto;
 }
+
 section .modul .navbar-nav .dropdown .nav-link {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 section .modul .dropdown-menu {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   max-height: 0;
   display: block;
@@ -65,6 +91,7 @@ section .modul .dropdown-menu {
   opacity: 0;
   margin-top: -16px;
 }
+
 section .modul .dropdown:hover .dropdown-menu {
   background: none !important;
   border: none;
@@ -72,6 +99,8 @@ section .modul .dropdown:hover .dropdown-menu {
   opacity: 1;
   margin-top: 0px;
 }
+
 section .modul .dropdown:hover .dropdown-menu li:hover {
   background-color: #8b868655;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

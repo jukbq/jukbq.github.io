@@ -1,0 +1,90 @@
+.conteiner_4 {
+    @include size(482px, 158px);
+    @extend %flex_colum_s;
+    position: relative;
+    margin: auto;
+    margin-top: 94px;
+    .holiday_activity {
+        @extend %flex_colum_s;
+        .holiday_ask {
+            @include size(482px, 24px);
+            @include fontM(300, 18px, 14px, 0px, #666666);
+            text-align: center;
+            margin-top: 53px
+        }
+        .holiday_forn {
+            @include size(482px, 40px);
+            @extend %flex_row_s;
+            margin-top: 15px;
+            input {
+                @include size(280px, 27px);
+                padding-top: 7px;
+                padding-left: 12px;
+                &::placeholder {
+                    @include fontM(300, 14px, 16.41px, 0px, #999999);
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+            .form_button {
+                @include fontM(700, 14px, 17.07px, 0px, #FFFFFF);
+                text-decoration: none;
+                padding: 13px 25px 10px 30px;
+                background-color: #ff4e51;
+                border-radius: 40px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .conteiner_4 {
+        margin-top: 95px;
+        .holiday_activity {
+            .holiday_ask {
+                margin-top: 48px;
+                margin-left: 3px;
+            }
+            .holiday_forn {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .conteiner_4 {
+        @include size(300px, 192px);
+        margin-top: 26px;
+        h1 {
+            @include size(280px, 54px);
+            text-align: center;
+        }
+        .holiday_activity {
+            @include size(300px, 160px);
+            .holiday_ask {
+                margin-top: 21px;
+                margin-left: 2px;
+            }
+            .holiday_forn {
+                flex-direction: column;
+                margin-top: 5px;
+                input {
+                    @include size(260px, 40px);
+                    padding-top: 12px;
+                    padding-bottom: 9px;
+                    padding-left: 13px;
+                }
+                .form_button {
+                    @include fontM(700, 14px, 17.07px, 0px, #FFFFFF);
+                    text-decoration: none;
+                    padding: 13px 76px 10px 86px;
+                    background-color: #ff4e51;
+                    border-radius: 40px;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.conteiner_1 {
+    @include size(940px, 461px);
+    @extend %flex_colum;
+    position: relative;
+    margin: auto;
+    margin-top: 93px;
+    .dreamshare_work_img {
+        @include size(940px, 400px);
+        @extend %flex_row_sb;
+        margin-top: 36px;
+        .step1 {
+            background-image: url(./../img/step/1440/Step1.jpg);
+        }
+        .step2 {
+            background-image: url(./../img/step/1440/Step2.jpg);
+        }
+        .step3 {
+            background-image: url(./../img/step/1440/Step3.jpg);
+        }
+        .image_step {
+            position: relative;
+            @include size(300px, 400px);
+            .text_step {
+                position: absolute;
+                bottom: 24px;
+                left: 25px;
+                right: 25px;
+                 :nth-child(1) {
+                    @include fontM(400, 10px, 12.19px, 2px, #FFFFFF);
+                    background-color: #FF4E50;
+                    border-radius: 40px;
+                    padding: 5px 12px 3px 14px;
+                    text-decoration: none;
+                }
+                 :nth-child(2) {
+                    @include size(250px, 58px);
+                    @include fontM(700, 24px, 26px, 0px, #FFFFFF);
+                    display: flex;
+                    align-items: flex-end;
+                    margin-top: 18px;
+                }
+                 :nth-child(3) {
+                    @include size(250px, 57px);
+                    @include fontM(300, 14px, 14px, 0px, #E3E3E3);
+                    display: flex;
+                    align-items: flex-end;
+                    margin-top: 10px;
+                }
+            }
+        }
+         :nth-child(2) {
+            .text_step {
+                 :nth-child(1) {
+                    padding: 5px 12px 3px 12px;
+                }
+                 :nth-child(2) {
+                    @include size(250px, 29px);
+                    margin-top: 23px;
+                }
+                 :nth-child(3) {
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .conteiner_1 {
+        @include size(768px, 461px);
+        margin-top: 92px;
+        .dreamshare_work_img {
+            @include size(768px, 400px);
+            justify-content: space-around;
+            margin-top: 31px;
+            .image_step {
+                width: 236px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .text_step {
+                    bottom: 16px;
+                    left: 20px;
+                     :nth-child(2) {
+                        @include size(196px, 58px);
+                        @include fontM(700, 24px, 14px, 0px, #FFFFFF);
+                        margin-top: 18px;
+                    }
+                     :nth-child(3) {
+                        @include size(196px, 76px);
+                        @include fontM(300, 14px, 14px, 0px, #E3E3E3);
+                        margin-top: 10px;
+                    }
+                }
+            }
+             :nth-child(2) {
+                .text_step {
+                     :nth-child(1) {
+                        padding: 5px 12px 3px 12px;
+                    }
+                     :nth-child(2) {
+                        @include size(196px, 29px);
+                        margin-top: 17px;
+                    }
+                     :nth-child(3) {
+                        margin-top: -11px;
+                    }
+                }
+            }
+             :nth-child(3) {
+                .text_step {
+                     :nth-child(1) {
+                        margin-left: -2px;
+                    }
+                     :nth-child(2) {
+                        margin-top: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .conteiner_1 {
+        @include size(300px, 781px);
+        margin-top: 34px;
+        .dreamshare_work_img {
+            @include size(300px, 781px);
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            .image_step {
+                @include size(300px, 240px);
+                background-repeat: no-repeat;
+                background-size: contain;
+                .text_step {
+                    bottom: 16px;
+                    left: 20px;
+                     :nth-child(3) {
+                        @include size(250px, 57px);
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .step1 {
+                background-image: url(./../img/step/320/Step1.jpg);
+            }
+            .step2 {
+                background-image: url(./../img/step/320/Step2.jpg);
+            }
+            .step3 {
+                background-image: url(./../img/step/320/Step3.jpg);
+            }
+             :nth-child(2) {
+                .text_step {
+                     :nth-child(2) {
+                        @include size(265px, 29px);
+                        margin-top: 17px;
+                    }
+                     :nth-child(3) {
+                        margin-top: 8px;
+                    }
+                }
+            }
+             :nth-child(3) {
+                .text_step {
+                     :nth-child(1) {
+                        padding: 5px 12px 3px 12px;
+                    }
+                     :nth-child(2) {
+                        @include size(250px, 58px);
+                        margin-top: 19px;
+                    }
+                     :nth-child(3) {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin box($w, $h, $bc) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin fontM($fw, $fsz, $lh, $ls, $fc) {
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $fc;
+}

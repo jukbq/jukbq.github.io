@@ -1,0 +1,31 @@
+%flex_row_sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex_row_sa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%flex_row_s {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+%flex_colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex_colum_s {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}

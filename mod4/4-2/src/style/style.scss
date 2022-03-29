@@ -1,0 +1,44 @@
+@import 'bases/reset';
+@import 'bases/mixins';
+@import 'bases/standard';
+@import 'block-style/header';
+@import 'block-style/conteiner1';
+@import 'block-style/conteiner2';
+@import 'block-style/conteiner3';
+@import 'block-style/conteiner4';
+@import 'block-style/footer';
+main {
+    width: 1440px;
+    margin: auto;
+}
+
+.conteiner_title {
+    @include fontM(700, 26px, 31.69px, 0px, #444444);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        width: 768px;
+    }
+    .conteiner_title {
+        @include fontM(700, 22px, 36.82px, 0px, #444444);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        width: 320px;
+    }
+    .conteiner_title {
+        @include fontM(700, 22px, 26.82px, 0px, #444444);
+    }
+}

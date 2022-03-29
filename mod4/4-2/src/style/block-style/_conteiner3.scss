@@ -1,0 +1,176 @@
+        .conteiner_3 {
+            @include size(940px, 1031px);
+            @extend %flex_colum_s;
+            position: relative;
+            margin: auto;
+            margin-top: 97px;
+            .holiday_ideas {
+                margin-top: 34px;
+                .foto_block {
+                    @include size(941px, 310px);
+                    @extend %flex_row_sb;
+                    margin-bottom: 20px;
+                    .holiday_ideas_img {
+                        @include size(300px, 310px);
+                        @extend %flex_colum;
+                        @include fontM(700, 22px, 26.82px, 0px, #FFFFFF);
+                        text-align: center;
+                    }
+                    .holiday_ideas_bigimg {
+                        @include size(620px, 310px);
+                        @extend %flex_colum;
+                        @include fontM(700, 22px, 26.82px, 0px, #FFFFFF);
+                        text-align: center;
+                    }
+                }
+                 :nth-child(1) {
+                    .foto1 {
+                        background-image: url(./../img/holiday-ideas/1440/Sport.jpg);
+                    }
+                    .foto2 {
+                        background-image: url(./../img/holiday-ideas/1440/Healath.jpg);
+                    }
+                    .foto3 {
+                        background-image: url(./../img/holiday-ideas/1440/Extreme.jpg);
+                        p {
+                            width: 200px;
+                        }
+                    }
+                }
+                 :nth-child(2) {
+                    .foto1 {
+                        background-image: url(./../img/holiday-ideas/1440/Games.jpg);
+                    }
+                    .foto2 {
+                        background-image: url(./../img/holiday-ideas/1440/Culture.jpg);
+                    }
+                }
+                 :nth-child(3) {
+                    .foto1 {
+                        background-image: url(./../img/holiday-ideas/1440/CultureCopy.jpg);
+                    }
+                    .foto2 {
+                        background-image: url(./../img/holiday-ideas/1440/GamesCopy.jpg);
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 960px) {
+            .conteiner_3 {
+                @include size(768px, 1031px);
+                margin-top: 239px;
+                .holiday_ideas {
+                    margin-top: 31px;
+                    .foto_block {
+                        @include size(748px, 310px);
+                        .holiday_ideas_img {
+                            @include size(236px, 310px);
+                            background-position-x: -41px
+                        }
+                        .holiday_ideas_bigimg {
+                            @include size(492px, 310px);
+                        }
+                    }
+                     :nth-child(1) {
+                         :nth-child(1) {
+                            p {
+                                width: 200px;
+                                margin-bottom: 26px;
+                            }
+                        }
+                         :nth-child(3) {
+                            background-position-x: -20px;
+                            p {
+                                width: 200px;
+                            }
+                        }
+                    }
+                     :nth-child(2) {
+                         :nth-child(1) {
+                            background-position-x: -29px;
+                        }
+                         :nth-child(2) {
+                            background-position-x: -71px;
+                        }
+                    }
+                     :nth-child(3) {
+                         :nth-child(2) {
+                            background-position-x: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 570px) {
+            .conteiner_3 {
+                @include size(320px, 994px);
+                margin-top: 35px;
+                h1 {
+                    @include size(280px, 54px);
+                    text-align: center;
+                }
+                .holiday_ideas {
+                    margin-top: 33px;
+                    .foto_block {
+                        @include size(300px, 378px);
+                        flex-direction: column;
+                        margin-bottom: 11px;
+                        .holiday_ideas_img {
+                            @include size(300px, 120px);
+                            background-position-x: 0px;
+                            background-position-y: 0px;
+                            p {
+                                @include size(206px, 54px);
+                            }
+                        }
+                        .holiday_ideas_bigimg {
+                            @include size(300px, 120px);
+                            background-position-x: 0px;
+                            background-position-y: 0px;
+                        }
+                    }
+                     :nth-child(1) {
+                        .foto1 {
+                            background-image: url(./../img/holiday-ideas/320/Sport.jpg);
+                        }
+                        .foto2 {
+                            background-image: url(./../img/holiday-ideas/320/Healath.jpg);
+                        }
+                        .foto3 {
+                            background-image: url(./../img/holiday-ideas/320/Extreme.jpg);
+                            p {
+                                width: 200px;
+                            }
+                        }
+                    }
+                     :nth-child(2) {
+                        @include size(300px, 250px);
+                        margin-top: 0px;
+                        .foto1 {
+                            background-image: url(./../img/holiday-ideas/320/Games.jpg);
+                            p {
+                                margin-top: 31px;
+                            }
+                        }
+                        .foto2 {
+                            background-image: url(./../img/holiday-ideas/320/Culture.jpg);
+                        }
+                    }
+                     :nth-child(3) {
+                        margin-top: 0px;
+                        @include size(300px, 250px);
+                        .foto1 {
+                            background-image: url(./../img/holiday-ideas/320/CultureCopy.jpg);
+                        }
+                        .foto2 {
+                            background-image: url(./../img/holiday-ideas/320/GamesCopy.jpg);
+                            p {
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
