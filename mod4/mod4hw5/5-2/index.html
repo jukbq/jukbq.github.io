@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Файл warehouse</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;">let balance = <span class="hljs-number" style="color: rgb(147, 92, 37);">1000</span>;
+let beer = <span class="hljs-number" style="color: rgb(147, 92, 37);">100</span>;
+let wine = <span class="hljs-number" style="color: rgb(147, 92, 37);">50</span>;
+let pepsi = <span class="hljs-number" style="color: rgb(147, 92, 37);">50</span>;
+let beerPrice = <span class="hljs-number" style="color: rgb(147, 92, 37);">21</span>;
+let winePrice = <span class="hljs-number" style="color: rgb(147, 92, 37);">68</span>;
+let pepsiPrice = <span class="hljs-number" style="color: rgb(147, 92, 37);">15</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">myBalance</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `На рахунку: ${balance} грн.`
+}
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">stockBalance</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `
+    Залишок пива: ${beer} пл., &lt;br&gt;
+    Залишок вмна: ${wine} пл. , &lt;br&gt;
+    Залишок Pepsi: ${pepsi} пл.`
+}
+let bSumm = <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>;
+let wSumm = <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>;
+let pSumm = <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">sale</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(name, quantity)</span> </span>{
+
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">if</span> (quantity &lt;= name) {
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">if</span> (name == <span class="hljs-string" style="color: rgb(86, 140, 59);">'beer'</span>) {
+            beer -= quantity;
+            balance += quantity * beerPrice;
+            bSumm = quantity * beerPrice;
+            <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `Пиво: ${quantity} пл.`;
+
+        }
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">if</span> (name == <span class="hljs-string" style="color: rgb(86, 140, 59);">'wine'</span>) {
+            wine -= quantity;
+            balance += quantity * winePrice;
+            wSumm = quantity * winePrice;
+            <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `Вино: ${quantity} пл.`
+        }
+        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">if</span> (name == <span class="hljs-string" style="color: rgb(86, 140, 59);">'pepsi'</span>) {
+            pepsi -= quantity;
+            balance += quantity * pepsiPrice;
+            pSumm = quantity * pepsiPrice;
+            <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `Pepsi: ${quantity} пл.`
+        }
+    }
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `Недостатня кількість`
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">total</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
+    let x = bSumm + wSumm + pSumm;
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> `Всього ${x} грн`
+}
+
+export { myBalance, stockBalance, sale, total }</pre>
+
+    <h1>Файл main.js</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;"><span class="hljs-meta" style="color: rgb(147, 92, 37);"><span class="hljs-meta-keyword">import</span> { myBalance, stockBalance, sale, total } from './warehouse.js';</span>
+
+console.log(myBalance());
+console.log(stockBalance());
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'beer'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'1'</span>));
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'wine'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'1'</span>));
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'pepsi'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'1'</span>));
+console.log(total());
+console.log(stockBalance());
+console.log(myBalance());
+
+console.log(myBalance());
+console.log(stockBalance());
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'beer'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'5'</span>));
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'wine'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'12'</span>));
+console.log(sale(<span class="hljs-string" style="color: rgb(86, 140, 59);">'pepsi'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'18'</span>));
+console.log(total());
+console.log(stockBalance());
+console.log(myBalance());</pre>
+
+
+</body>
+<script src="warehouse.js" type="module"></script>
+<script src="main.js" type="module"></script>
+
+</html>
