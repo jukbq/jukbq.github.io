@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Код</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;">let ask = prompt(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Введіть число'</span>);
+let x = ask;
+let result = (x == <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>) ? <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число 0'</span> : (x % <span class="hljs-number" style="color: rgb(147, 92, 37);">2</span> !== <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>) ? <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число непарне'</span> : <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число парне'</span>;
+
+document.write(`&lt;h2&gt;${result}&lt;/h2&gt;`)
+document.write(`&lt;h2&gt;${x}&lt;/h2&gt;`)</pre>
+
+
+    <h1>TS Код</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;">let ask: any = prompt(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Введіть число'</span>);
+let x: number = ask;
+let result = (x == <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>) ? <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число 0'</span> : (x % <span class="hljs-number" style="color: rgb(147, 92, 37);">2</span> !== <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>) ? <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число непарне'</span> : <span class="hljs-string" style="color: rgb(86, 140, 59);">'Число парне'</span>;
+
+document.write(`&lt;h2&gt;${result}&lt;/h2&gt;`)
+document.write(`&lt;h2&gt;${x}&lt;/h2&gt;`)
+</pre>
+
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

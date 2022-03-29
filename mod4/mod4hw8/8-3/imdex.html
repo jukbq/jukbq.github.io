@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Код</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;">let arr_1 = [<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">5</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">22</span>];
+let arr_2 = [<span class="hljs-number" style="color: rgb(147, 92, 37);">10</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">533</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">-22</span>];
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">max_num</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(arr)</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> document.write(`&lt;h2&gt;${Math.max.apply(<span class="hljs-literal" style="color: rgb(147, 92, 37);">null</span>, arr)}&lt;/h2&gt;`)
+}
+max_num(arr_1);
+max_num(arr_2);</pre>
+    <h1>TS Код</h1>
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;">let arr_1: number[] = [<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">5</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">22</span>];
+let arr_2: number[] = [<span class="hljs-number" style="color: rgb(147, 92, 37);">10</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">533</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">-22</span>];
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">max_num</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(arr: number[])</span> </span>{
+   <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> document.write(`&lt;h2&gt;${Math.max.apply(<span class="hljs-literal" style="color: rgb(147, 92, 37);">null</span>, arr)}&lt;/h2&gt;`)
+}
+
+max_num(arr_1)
+max_num(arr_2)
+
+</pre>
+
+</body>
+<script src="main.js"></script>
+
+</html>
