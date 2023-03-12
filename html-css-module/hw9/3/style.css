@@ -86,6 +86,6 @@ body {
     }
     100% {
         width: 55px;
-        transform: rotate(360deg);
+    
     }
 }
