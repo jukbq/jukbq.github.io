@@ -13,9 +13,8 @@ function priNum() {
         }
         res = `${num} -  Прсте число`
     };
-    console.log(`<h2>${res}</h2>`)
     document.write(`<h2>${res}</h2>`)
-
+    console.log(`<h2>${res}</h2>`)
 };
 
 
