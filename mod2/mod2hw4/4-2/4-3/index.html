@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 25, 24); color: rgb(168, 161, 159); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(156, 148, 145);">//Завдання 3</span>
+<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> numb = <span class="hljs-string" style="color: rgb(123, 151, 38);">'&lt;ul&gt;'</span>;
+<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> i = <span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>;
+<span class="hljs-keyword" style="color: rgb(102, 102, 234);">do</span> {
+    numb += <span class="hljs-string" style="color: rgb(123, 151, 38);">'&lt;li&gt;'</span>;
+    numb += <span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;p&gt;<span class="hljs-subst">${i}</span>&lt;/p&gt;`</span>;
+    numb += <span class="hljs-string" style="color: rgb(123, 151, 38);">'&lt;/li&gt;'</span>;
+    i += <span class="hljs-number" style="color: rgb(223, 83, 32);">2</span>;
+} <span class="hljs-keyword" style="color: rgb(102, 102, 234);">while</span> (i &lt;= <span class="hljs-number" style="color: rgb(223, 83, 32);">55</span>);
+numb += <span class="hljs-string" style="color: rgb(123, 151, 38);">'&lt;/ul&gt;'</span>;
+
+<span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;div&gt; <span class="hljs-subst">${numb}</span> &lt;/div&gt;`</span>);</pre>
+</body>
+<script src="main.js"></script>
+
+</html>

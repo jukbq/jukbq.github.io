@@ -4,13 +4,17 @@ let b = +prompt('Введіть степінь');
 let x = 1;
 
 if (b < 0) {
-    for (let i = b; i < 0; i++) {
+    let i = b;
+    do {
         x /= a;
-    }
+        i++;
+    } while (i < 0);
 } else {
-    for (let i = 1; i <= b; i++) {
+    let i = 1;
+    do {
         x *= a;
-    }
+        i++;
+    } while (i <= b);
 }
 
-document.write(`<h1>${x}</h1>`)
+document.write(`<h1>${x}</h1>`);
