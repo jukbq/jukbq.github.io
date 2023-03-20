@@ -7,6 +7,10 @@
 @import 'block-style/conteiner3';
 @import 'block-style/conteiner4';
 @import 'block-style/footer';
+
+body {
+    overflow-x: hidden;
+}
 main {
     width: 1440px;
     margin: auto;

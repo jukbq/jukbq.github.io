@@ -1,11 +1,10 @@
-let fib = n => {
-    let a = 0,
-        b = 1;
-    for (let i = 0; i < n; i++) {
-        let c = b;
-        b = a + b;
-        a = c;
-        document.write(`<h3>${c}<h3>`);
-    };
-};
-fib(10);
+let numb = +prompt("Введыть цыле число");
+const fib = (n) => {
+    let fibArr = [1, 1]; 
+    for (let i = 2; i < n; i++) { 
+        fibArr.push(fibArr[i - 1] + fibArr[i - 2]);
+    }
+    document.write(`<h2>${fibArr.join('  //==//')}<h2>`);
+}
+fib(numb)
+
