@@ -1,0 +1,257 @@
+    .conteiner_2 {
+        @include size(941px, 361px);
+        @extend %flex_colum_s;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+        h1 {
+            @include size(491px, 32px);
+            position: absolute;
+            margin-left: 3px;
+            top: 0px;
+        }
+        .partner_block {
+            @include size(940px, 205px);
+            @extend %flex_row_sb;
+            margin-top: 68px;
+            .partner {
+                @include size(221px, 226px);
+                @extend %flex_colum;
+                position: relative;
+                justify-content: start;
+                text-align: center;
+                .partner_img {
+                    @include size(120px, 120px);
+                    border-radius: 50%;
+                    position: relative;
+                    margin-top: 10px;
+                    &::after {
+                        position: absolute;
+                        @include size(32px, 32px);
+                        border: 3px solid white;
+                        border-radius: 50%;
+                        top: 85px;
+                        left: 85px;
+                        text-align: center;
+                        line-height: 38px;
+                    }
+                }
+                .partner_name {
+                    @include size(221px, 18px);
+                    @include fontM(700, 14px, 17.07px, 0px, #444444);
+                    margin-top: 19px;
+                    margin-bottom: 20px
+                }
+                .partner_profession {
+                    @include size(221px, 38px);
+                    @include fontM(300, 14px, 14px, 0px, #666666);
+                    position: absolute;
+                    bottom: 0px;
+                }
+            }
+             :nth-child(1) {
+                .partner_img {
+                    &:after {
+                        content: url(../img/icon/music2.svg);
+                        background-color: #FF4E50;
+                    }
+                }
+            }
+             :nth-child(2) {
+                .partner_img {
+                    margin-left: 2px;
+                    &:after {
+                        content: url(../img/icon/brush.svg);
+                        background-color: #19D4CA;
+                    }
+                }
+            }
+             :nth-child(3) {
+                .partner_img {
+                    margin-left: 2px;
+                    &:after {
+                        content: url(../img/icon/camera.svg);
+                        background-color: #FFA710;
+                    }
+                }
+                .partner_profession {
+                    bottom: -5px;
+                    left: 6px;
+                }
+            }
+             :nth-child(4) {
+                .partner_img {
+                    margin-left: 3px;
+                    &:after {
+                        content: url(../img/icon/Shape.svg);
+                        background-color: #667DF3;
+                    }
+                }
+                .partner_profession {
+                    bottom: -5px;
+                    left: 1px;
+                }
+            }
+        }
+        a {
+            @include fontM(700, 14px, 17.07px, 0px, #FF4E50);
+            text-decoration: none;
+            padding: 10px 17px 9px 22px;
+            border: 2px solid #FF4E50;
+            border-radius: 40px;
+            margin-top: 55px;
+        }
+    }
+    
+    @media screen and (max-width: 960px) {
+        .conteiner_2 {
+            @include size(767px, 461px);
+            margin-top: 92px;
+            margin-bottom: 50px;
+            h1 {
+                @include size(416px, 27px);
+            }
+            .partner_block {
+                @include size(492px, 605px);
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: baseline;
+                margin-top: 66px;
+                .partner {
+                    @include size(236px, 218px);
+                    margin-bottom: 40px;
+                    .partner_img {
+                        margin-top: 0px;
+                    }
+                    .partner_name {
+                        margin-top: 20px;
+                    }
+                    .partner_profession {
+                        @include size(236px, 38px);
+                        position: absolute;
+                        bottom: 2px;
+                    }
+                }
+                 :nth-child(2) {
+                    .partner_img {
+                        margin-top: 1px;
+                        margin-left: 0px;
+                    }
+                    .partner_profession {
+                        bottom: 0px;
+                    }
+                }
+                 :nth-child(3) {
+                    .partner_img {
+                        margin-left: 19px;
+                    }
+                    .partner_name {
+                        margin-left: 19px;
+                    }
+                    .partner_profession {
+                        margin-left: 4px;
+                        bottom: -3px;
+                    }
+                }
+                 :nth-child(4) {
+                    .partner_img {
+                        margin-top: 2px;
+                        margin-left: 19px;
+                    }
+                    .partner_name {
+                        margin-left: 19px;
+                    }
+                    .partner_profession {
+                        margin-left: 9px;
+                    }
+                }
+            }
+            a {
+                margin-top: -10px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 570px) {
+        .conteiner_2 {
+            @include size(300px, 1031px);
+            margin-top: 37px;
+            margin-bottom: 0px;
+            h1 {
+                @include size(280px, 54px);
+                text-align: center;
+            }
+            .partner_block {
+                @include size(236px, 1000px);
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: baseline;
+                margin-top: 68px;
+                .partner {
+                    @include size(236px, 205px);
+                    margin-bottom: 0px;
+                    .partner_img {
+                        margin-top: 0px;
+                    }
+                    .partner_name {
+                        margin-top: 19px;
+                    }
+                    .partner_profession {
+                        @include size(236px, 38px);
+                        position: absolute;
+                        bottom: -10px;
+                    }
+                }
+                 :nth-child(2) {
+                    order: 3;
+                    .partner_img {
+                        margin-left: 0px;
+                        margin-top: -25px;
+                    }
+                    .partner_name {
+                        margin-left: 0px;
+                        margin-top: 19px;
+                    }
+                    .partner_profession {
+                        margin-left: 0px;
+                        bottom: 15px;
+                    }
+                }
+                 :nth-child(3) {
+                    order: 2;
+                    .partner_img {
+                        margin-left: 0px;
+                        margin-top: -22px;
+                    }
+                    .partner_name {
+                        margin-left: 0px;
+                        margin-top: 20px;
+                    }
+                    .partner_profession {
+                        @include size(236px, 57px);
+                        margin-left: -6px;
+                        bottom: -12px;
+                    }
+                }
+                 :nth-child(4) {
+                    order: 4;
+                    .partner_img {
+                        margin-left: -1px;
+                        margin-top: -47px;
+                    }
+                    .partner_name {
+                        margin-left: 0px;
+                        margin-top: 19px;
+                    }
+                    .partner_profession {
+                        margin-left: -1px;
+                        margin-bottom: 47px;
+                    }
+                }
+            }
+            a {
+                margin-top: -10px;
+                padding: 10px 67px 9px 72px;
+            }
+        }
+    }

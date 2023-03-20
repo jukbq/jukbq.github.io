@@ -1,0 +1,103 @@
+.header {
+    @include size(1440px, 700px);
+    @extend %flex_colum;
+    background-image: url(./../img/Background.jpg);
+    position: relative;
+    background-size: cover;
+    margin: auto;
+    .logo {
+        width: 152px;
+        @include fontM(700, 20px, 24.38px, 0px, #FFFFFF);
+        position: absolute;
+        top: 46px;
+        left: 248px;
+    }
+    .log_in_out {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        right: 291px;
+        a {
+            @include fontM(400, 14px, 17.07px, 0px, #ffffff);
+            text-decoration: none;
+            padding: 8px 16px 7px 15px;
+            border: 2px solid #ffffff00;
+            border-radius: 40px;
+        }
+         :nth-child(1) {
+            padding: 8px 18px 7px 15px;
+        }
+        a:hover {
+            border: 2px solid #ffffff;
+        }
+    }
+    .header_titel {
+        @include size(470px, 127px);
+        @include fontM(700, 52px, 63.39px, 0px, #ffffff);
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .header_text {
+        @include fontM(300, 24px, 24.5px, 0px, #ffffff);
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    .header_button {
+        @include fontM(700, 14px, 17.07px, 0px, #FFFFFF);
+        text-decoration: none;
+        padding: 12px 18px 12px 20px;
+        background-color: #FF4E50;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        @include size(768px, 700px);
+        background-image: url(./../img/Bitmap768.jpg);
+        .logo {
+            top: 46px;
+            left: 49px;
+        }
+        .log_in_out {
+            top: 40px;
+            right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header {
+        @include size(320px, 540px);
+        background-image: url(./../img/Bitmap320.jpg);
+        .logo {
+            top: 153px;
+            left: 86px;
+        }
+        .log_in_out {
+            top: 20px;
+            right: 84px;
+        }
+        .header_titel {
+            @include size(272px, 74px);
+            @include fontM(700, 30px, 36.57px, 0px, #ffffff);
+            position: absolute;
+            top: 204px;
+            left: 24px;
+        }
+        .header_text {
+            @include size(280px, 49px);
+            @include fontM(300, 18px, 24.5px, 0px, #ffffff);
+            position: absolute;
+            top: 283px;
+            left: 20px;
+        }
+        .header_button {
+            @include fontM(700, 14px, 17.07px, 0px, #FFFFFF);
+            padding: 13px 45px 10px 47px;
+            position: absolute;
+            top: 347px;
+            left: 21px;
+        }
+    }
+}
