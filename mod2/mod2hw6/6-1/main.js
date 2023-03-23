@@ -4,7 +4,7 @@ const fib = (n) => {
     for (let i = 2; i < n; i++) { 
         fibArr.push(fibArr[i - 1] + fibArr[i - 2]);
     }
-    document.write(`<h2>${fibArr.join('  //==//')}<h2>`);
+    document.write(`<h2>${fibArr.join(', ')}<h2>`);
 }
 fib(+prompt("Введыть цыле число"))
 
