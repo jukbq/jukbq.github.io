@@ -1,13 +1,20 @@
-let n = +prompt("кількість чисел");
-let q = +prompt("знаменник ");
-let b = 1;
+//Завдання 6-3
+const simpleNumber = function (start, end) {
+    const primeNumbers = [];
+    for (let i = start; i <= end; i++) {
+        let isPrime = true;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime && i > 1) {
+            primeNumbers.push(i);
+            console.log(i);
+        }
+    }
+    document.write(`<h2>${primeNumbers.join(', ')}</h2>`);
+}
 
-let sumGeoProg = function() {
-    let qn = 1;
-    for (let i = 1; i <= n; i++) {
-        qn *= q;;
-    };
-    let s = (b * qn - 1) / (q - 1);
-    document.write(`<h3>${s}</h3>`);
-};
-sumGeoProg(sumGeoProg);
+simpleNumber(+prompt("Введіть початкове число"), +prompt("Введіть кінцеве число"));

@@ -9,16 +9,16 @@
 </head>
 
 <body>
-<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 25, 24); color: rgb(168, 161, 159); padding: 0.5em;"><span class="hljs-built_in" style="color: rgb(223, 83, 32);">let</span> numb = +<span class="hljs-built_in" style="color: rgb(223, 83, 32);">prompt</span>(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введыть цыле число"</span>);
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 25, 24); color: rgb(168, 161, 159); padding: 0.5em;">//Завдання <span class="hljs-number" style="color: rgb(223, 83, 32);">6</span>-<span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>
 const <span class="hljs-built_in" style="color: rgb(223, 83, 32);">fib</span> = (n) =&gt; {
     <span class="hljs-built_in" style="color: rgb(223, 83, 32);">let</span> fibArr = [<span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>, <span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>]; 
     <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-built_in" style="color: rgb(223, 83, 32);">let</span> i = <span class="hljs-number" style="color: rgb(223, 83, 32);">2</span>; i &lt; n; i++) { 
         fibArr.<span class="hljs-built_in" style="color: rgb(223, 83, 32);">push</span>(fibArr[i - <span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>] + fibArr[i - <span class="hljs-number" style="color: rgb(223, 83, 32);">2</span>]);
     }
-    document.write(`&lt;h2&gt;${fibArr.<span class="hljs-built_in" style="color: rgb(223, 83, 32);">join</span>(' ')}&lt;h2&gt;`);
+    document.write(`&lt;h2&gt;${fibArr.<span class="hljs-built_in" style="color: rgb(223, 83, 32);">join</span>('  //==//')}&lt;h2&gt;`);
 }
-<span class="hljs-built_in" style="color: rgb(223, 83, 32);">fib</span>(numb)
-</pre>
+<span class="hljs-built_in" style="color: rgb(223, 83, 32);">fib</span>(+<span class="hljs-built_in" style="color: rgb(223, 83, 32);">prompt</span>(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введыть цыле число"</span>))</pre>
     
 </body>
 <script src="main.js"></script>

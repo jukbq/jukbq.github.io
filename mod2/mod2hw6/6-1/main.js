@@ -1,4 +1,4 @@
-let numb = +prompt("Введыть цыле число");
+//Завдання 6-1
 const fib = (n) => {
     let fibArr = [1, 1]; 
     for (let i = 2; i < n; i++) { 
@@ -6,5 +6,5 @@ const fib = (n) => {
     }
     document.write(`<h2>${fibArr.join('  //==//')}<h2>`);
 }
-fib(numb)
+fib(+prompt("Введыть цыле число"))
 

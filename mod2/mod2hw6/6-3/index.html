@@ -9,19 +9,30 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> n = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"кількість чисел"</span>);
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> q = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"знаменник "</span>);
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> b = <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
+  
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 25, 24); color: rgb(168, 161, 159); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(156, 148, 145);">//Завдання 6-3</span>
+<span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> simpleNumber = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> (<span class="hljs-params" style="color: rgb(223, 83, 32);">start, end</span>) </span>{
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> primeNumbers = [];
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> i = start; i &lt;= end; i++) {
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> isPrime = <span class="hljs-literal" style="color: rgb(223, 83, 32);">true</span>;
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> j = <span class="hljs-number" style="color: rgb(223, 83, 32);">2</span>; j &lt; i; j++) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (i % j === <span class="hljs-number" style="color: rgb(223, 83, 32);">0</span>) {
+                isPrime = <span class="hljs-literal" style="color: rgb(223, 83, 32);">false</span>;
+                <span class="hljs-keyword" style="color: rgb(102, 102, 234);">break</span>;
+            }
+        }
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (isPrime &amp;&amp; i &gt; <span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>) {
+            primeNumbers.push(i);
+            <span class="hljs-built_in" style="color: rgb(223, 83, 32);">console</span>.log(i);
+        }
+    }
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h2&gt;<span class="hljs-subst">${primeNumbers.join(', ')}</span>&lt;/h2&gt;`</span>);
+}
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> sumGeoProg = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> qn = <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>;
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> i = <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>; i &lt;= n; i++) {
-        qn *= q;;
-    };
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> s = (b * qn - <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>) / (q - <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>);
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h3&gt;<span class="hljs-subst">${s}</span>&lt;/h3&gt;`</span>);
-};
-sumGeoProg(sumGeoProg);</pre>
+simpleNumber(+prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введіть початкове число"</span>), +prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введіть кінцеве число"</span>));
+</pre>
+
+
 </body>
 <script src="main.js"></script>
 

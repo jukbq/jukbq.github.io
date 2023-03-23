@@ -20,3 +20,8 @@ li {
     border-left: 0.5px solid black;
     text-align: center;
 }
+
+h2 {
+    width: 60vw;
+    text-align: center;
+}
