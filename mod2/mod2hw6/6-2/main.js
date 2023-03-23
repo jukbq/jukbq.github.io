@@ -9,4 +9,4 @@ let geoProg = function(n, q) {
     document.write(`<h3>${summ}</h3>`);
 }
 
-geoProg(+prompt("кількість чисел"), +prompt("Знаменник"));
+geoProg(+prompt("кількість чисел прогресії"), +prompt("Знаменник"));
