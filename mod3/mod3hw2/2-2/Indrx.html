@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;">let mail = prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">'Введіть email'</span>);
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (mail.indexOf(<span class="hljs-string" style="color: rgb(75, 139, 139);">'@'</span>) == <span class="hljs-number" style="color: rgb(180, 90, 60);">-1</span>) {
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(`<span class="javascript">&lt;h1&gt;<span class="hljs-string" style="color: rgb(75, 139, 139);">'Не віпна адреса'</span>&lt;<span class="hljs-regexp" style="color: rgb(202, 73, 73);">/h1&gt;</span></span>`)
-} <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (
-    mail.startsWith(<span class="hljs-string" style="color: rgb(75, 139, 139);">'@'</span>) ||
-    mail.endsWith(<span class="hljs-string" style="color: rgb(75, 139, 139);">'@'</span>) == <span class="hljs-literal" style="color: rgb(180, 90, 60);">true</span>) {
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(`<span class="javascript"><span class="hljs-regexp" style="color: rgb(202, 73, 73);">&lt;h1&gt;'Не віHна адреса'&lt;/</span>h1&gt;</span>`);
-} <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span>
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(`<span class="javascript">&lt;h1&gt;${mail}&lt;<span class="hljs-regexp" style="color: rgb(202, 73, 73);">/h1&gt;</span></span>`)</pre>
+  
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;">let mail = prompt(<span class="hljs-string" style="color: rgb(72, 153, 99);">'Введіть email'</span>);
+
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (
+    mail.indexOf(<span class="hljs-string" style="color: rgb(72, 153, 99);">'@'</span>) == <span class="hljs-number" style="color: rgb(159, 113, 60);">-1</span> || 
+    mail.startsWith(<span class="hljs-string" style="color: rgb(72, 153, 99);">'@'</span>) || 
+    mail.endsWith(<span class="hljs-string" style="color: rgb(72, 153, 99);">'@'</span>) == <span class="hljs-literal" style="color: rgb(159, 113, 60);">true</span>) {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(`<span class="javascript">&lt;h1&gt;<span class="hljs-string" style="color: rgb(72, 153, 99);">'Не вірна адреса'</span>&lt;<span class="hljs-regexp" style="color: rgb(177, 97, 57);">/h1&gt;</span></span>`)
+} <span class="hljs-keyword" style="color: rgb(85, 133, 155);">else</span>
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(`<span class="javascript"><span class="hljs-regexp" style="color: rgb(177, 97, 57);">&lt;h1&gt;${mail}&lt;/</span>h1&gt;</span>`)</pre>
+
+
 </body>
 <script src="main.js"></script>
 
