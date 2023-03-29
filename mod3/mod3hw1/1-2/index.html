@@ -9,38 +9,36 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">MyMath</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.a = <span class="hljs-number" style="color: rgb(180, 90, 60);">11</span>;
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.b = <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>;
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.x = <span class="hljs-string" style="color: rgb(75, 139, 139);">""</span>;
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.sum = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.x = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.a + <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.b;
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${this.a}</span> + <span class="hljs-subst">${this.b}</span> = <span class="hljs-subst">${this.x}</span>`</span>
-    }
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.multiplication = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.x = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.a * <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.b;
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${this.a}</span> * <span class="hljs-subst">${this.b}</span> = <span class="hljs-subst">${this.x}</span>`</span>
-    }
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.division = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.x = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.a / <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.b;
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${this.a}</span> / <span class="hljs-subst">${this.b}</span> = <span class="hljs-subst">${this.x}</span>`</span>
-    }
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.subtraction = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.x = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.a - <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.b;
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> <span class="hljs-string" style="color: rgb(75, 139, 139);">`<span class="hljs-subst">${this.a}</span> - <span class="hljs-subst">${this.b}</span> = <span class="hljs-subst">${this.x}</span>`</span>
-    }
+     
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> MyMath = {};
+MyMath.a = <span class="hljs-number" style="color: rgb(159, 113, 60);">5</span>;
+MyMath.b = <span class="hljs-number" style="color: rgb(159, 113, 60);">2</span>;
+
+MyMath.sum = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> (<span class="hljs-params" style="color: rgb(159, 113, 60);"></span>) </span>{
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h2&gt;<span class="hljs-subst">${this.a + this.b}</span>&lt;/h2&gt;`</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.a + <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.b);
 }
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> sum = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> MyMath();
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt;<span class="hljs-subst">${sum.sum()}</span>&lt;/h2&gt;`</span>);
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> multiplication = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> MyMath();
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt;<span class="hljs-subst">${multiplication.multiplication()}</span>&lt;/h2&gt;`</span>);
+MyMath.multiplication = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> (<span class="hljs-params" style="color: rgb(159, 113, 60);"></span>) </span>{
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h2&gt;<span class="hljs-subst">${this.a * this.b}</span>&lt;/h2&gt;`</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.a * <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.b);
+}
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> division = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> MyMath();
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt;<span class="hljs-subst">${multiplication.division()}</span>&lt;/h2&gt;`</span>);
+MyMath.division = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> (<span class="hljs-params" style="color: rgb(159, 113, 60);"></span>) </span>{
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h2&gt;<span class="hljs-subst">${this.a / this.b}</span>&lt;/h2&gt;`</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.a / <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.b);
+}
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> subtraction = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> MyMath();
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt;<span class="hljs-subst">${multiplication.subtraction()}</span>&lt;/h2&gt;`</span>);</pre>
+MyMath.subtraction = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> (<span class="hljs-params" style="color: rgb(159, 113, 60);"></span>) </span>{
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h2&gt;<span class="hljs-subst">${this.a - this.b}</span>&lt;/h2&gt;`</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.a - <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.b);
+}
+
+MyMath.sum();
+MyMath.multiplication();
+MyMath.division();
+MyMath.subtraction();</pre>
+
 </body>
 <script src="main.js"></script>
 

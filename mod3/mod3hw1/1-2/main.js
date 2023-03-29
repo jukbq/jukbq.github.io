@@ -1,32 +1,28 @@
-function MyMath() {
-    this.a = 11;
-    this.b = 2;
-    this.x = "";
-    this.sum = function() {
-        this.x = this.a + this.b;
-        return `${this.a} + ${this.b} = ${this.x}`
-    }
-    this.multiplication = function() {
-        this.x = this.a * this.b;
-        return `${this.a} * ${this.b} = ${this.x}`
-    }
-    this.division = function() {
-        this.x = this.a / this.b;
-        return `${this.a} / ${this.b} = ${this.x}`
-    }
-    this.subtraction = function() {
-        this.x = this.a - this.b;
-        return `${this.a} - ${this.b} = ${this.x}`
-    }
+let MyMath = {};
+MyMath.a = 5;
+MyMath.b = 2;
+
+MyMath.sum = function () {
+    document.write(`<h2>${this.a + this.b}</h2>`);
+    console.log(this.a + this.b);
 }
-let sum = new MyMath();
-document.write(`<h2>${sum.sum()}</h2>`);
 
-let multiplication = new MyMath();
-document.write(`<h2>${multiplication.multiplication()}</h2>`);
+MyMath.multiplication = function () {
+    document.write(`<h2>${this.a * this.b}</h2>`);
+    console.log(this.a * this.b);
+}
 
-let division = new MyMath();
-document.write(`<h2>${multiplication.division()}</h2>`);
+MyMath.division = function () {
+    document.write(`<h2>${this.a / this.b}</h2>`);
+    console.log(this.a / this.b);
+}
 
-let subtraction = new MyMath();
-document.write(`<h2>${multiplication.subtraction()}</h2>`);
+MyMath.subtraction = function () {
+    document.write(`<h2>${this.a - this.b}</h2>`);
+    console.log(this.a - this.b);
+}
+
+MyMath.sum();
+MyMath.multiplication();
+MyMath.division();
+MyMath.subtraction();

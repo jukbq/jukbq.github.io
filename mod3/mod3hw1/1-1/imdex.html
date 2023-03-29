@@ -9,20 +9,24 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> person = {
-    firstName: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivan'</span>,
-    secondName: <span class="hljs-string" style="color: rgb(75, 139, 139);">'Ivanov'</span>,
-    showData: <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(
-            <span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h2&gt; Ім\'я:  <span class="hljs-subst">${this.firstName}</span>&lt;/h2&gt;   &lt;h2&gt;Прізвише:  <span class="hljs-subst">${this.secondName}</span>,&lt;/h2&gt; `</span>)
-    }
+    
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> person = {};
+person.firstName = <span class="hljs-string" style="color: rgb(72, 153, 99);">'Ivan'</span>;
+person.secondName = <span class="hljs-string" style="color: rgb(72, 153, 99);">'Ivanov'</span>;
+
+person.showData = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> (<span class="hljs-params" style="color: rgb(159, 113, 60);"></span>) </span>{
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h2&gt; Ім'я: <span class="hljs-subst">${this.firstName}</span>&lt;/h2&gt;&lt;h2&gt;Прізвище: <span class="hljs-subst">${this.secondName}</span>&lt;/h2&gt;`</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.firstName + <span class="hljs-string" style="color: rgb(72, 153, 99);">', '</span> + <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.secondName);
 }
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> newPerson = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Object</span>.assign({}, person)
-newPerson.firstName = <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petro'</span>;
-newPerson.secondName = <span class="hljs-string" style="color: rgb(75, 139, 139);">'Petriv'</span>;
+
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> newPerson = <span class="hljs-built_in" style="color: rgb(159, 113, 60);">Object</span>.assign({}, person);
+newPerson.firstName = <span class="hljs-string" style="color: rgb(72, 153, 99);">'Petro'</span>;
+newPerson.secondName = <span class="hljs-string" style="color: rgb(72, 153, 99);">'Petriv'</span>;
 
 person.showData();
-newPerson.showData();</pre>
+newPerson.showData();
+</pre>
+
 </body>
 <script src="main.js"></script>
 
