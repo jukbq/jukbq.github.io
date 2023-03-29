@@ -1,3 +1,2 @@
 let text = prompt("Введіть текст");
-let lett = prompt("Яку букву шукати");
-document.write(`<h1>${text.split(lett).length -1}</h1>`);
+document.write(`<h1>Уількість пробілів в тексті ${text.split(' ' ).length -1}</h1>`);

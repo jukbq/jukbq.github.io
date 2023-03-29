@@ -9,9 +9,11 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> text = <span class="hljs-string" style="color: rgb(75, 139, 139);">"Text html javascript html html html HTML css”"</span>
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> res = text.toLowerCase();
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${res.split('html').length -1}</span>&lt;/h1&gt;`</span>);</pre>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-built_in" style="color: rgb(159, 113, 60);">let</span> text = <span class="hljs-string" style="color: rgb(72, 153, 99);">"Text html javascript html html html HTML css”"</span>
+<span class="hljs-built_in" style="color: rgb(159, 113, 60);">let</span> res = text.toLowerCase();
+document.write(`&lt;h1&gt;${res.<span class="hljs-built_in" style="color: rgb(159, 113, 60);">split</span>('html').<span class="hljs-built_in" style="color: rgb(159, 113, 60);">length</span> -<span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>}&lt;/h1&gt;`);
+console.<span class="hljs-built_in" style="color: rgb(159, 113, 60);">log</span>(res.<span class="hljs-built_in" style="color: rgb(159, 113, 60);">split</span>('html').<span class="hljs-built_in" style="color: rgb(159, 113, 60);">length</span> - <span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>);</pre>
 
 </body>
 <script src="mail.js"></script>

@@ -9,12 +9,21 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">url</span> = prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"Повна адреса сайту"</span>)
+    
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> <span class="hljs-built_in" style="color: rgb(159, 113, 60);">url</span> = prompt(<span class="hljs-string" style="color: rgb(72, 153, 99);">"Введіть в поле адресу сайта"</span>);
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> hp = <span class="hljs-built_in" style="color: rgb(159, 113, 60);">url</span>.split(<span class="hljs-string" style="color: rgb(72, 153, 99);">'http://'</span>);
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> hs = <span class="hljs-built_in" style="color: rgb(159, 113, 60);">url</span>.split(<span class="hljs-string" style="color: rgb(72, 153, 99);">'https://'</span>);
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> hp = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">url</span>.split(<span class="hljs-string" style="color: rgb(75, 139, 139);">'http://'</span>)
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${hp[1]}</span>&lt;h1&gt;`</span>)
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> hs = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">url</span>.split(<span class="hljs-string" style="color: rgb(75, 139, 139);">'https://'</span>)
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${hs[1]}</span>&lt;h1&gt;`</span>)</pre>
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (hp.length &gt; <span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>) {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(hp[<span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>]);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;<span class="hljs-subst">${hp[1]}</span>&lt;/h1&gt;`</span>);
+} <span class="hljs-keyword" style="color: rgb(85, 133, 155);">else</span> <span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (hs.length &gt; <span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>) {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(hs[<span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>]);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;<span class="hljs-subst">${hs[1]}</span>&lt;/h1&gt;`</span>);
+} <span class="hljs-title" style="color: rgb(71, 140, 144);">else</span> {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">'Адреса не має http:// или https://'</span>);
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;Адреса не має http:// или https://&lt;/h1&gt;`</span>);
+}</pre>
 
 </body>
 <script src="mail.js"></script>
