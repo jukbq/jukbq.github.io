@@ -9,25 +9,21 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> ask = prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">"Введіть число для визначення квадратного кореня"</span>);
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> num = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Number</span>(ask)
-
-
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> res = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">getSqrt</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"><span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span></span>) </span>{
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> &gt; <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> sum = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Math</span>.sqrt(<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span>)
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;Квадратний корінь з <span class="hljs-subst">${number.toFixed(2)}</span> = <span class="hljs-subst">${sum.toFixed(2)}</span>&lt;/h1&gt;`</span>)
-    } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> &lt; <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;Введіть додатнє число&lt;/h1&gt;`</span>)
-    } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;Будь ласка, введіть число!&lt;h1&gt;`</span>)
-    } <span class="hljs-keyword" style="color: rgb(132, 100, 196);">else</span> <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> = <span class="hljs-built_in" style="color: rgb(180, 90, 60);">isNaN</span>()) {
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;Повинно бути числове значення&lt;h1&gt;`</span>)
+   
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25); color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> res = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> <span class="hljs-title" style="color: rgb(71, 140, 144);">getSqrt</span>(<span class="hljs-params" style="color: rgb(159, 113, 60);"><span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span></span>) </span>{
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (<span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span> &gt; <span class="hljs-number" style="color: rgb(159, 113, 60);">0</span>) {
+        <span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> sum = <span class="hljs-built_in" style="color: rgb(159, 113, 60);">Math</span>.sqrt(<span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span>)
+        <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;Квадратний корінь з <span class="hljs-subst">${number.toFixed(2)}</span> = <span class="hljs-subst">${sum.toFixed(2)}</span>&lt;/h1&gt;`</span>)
+    } <span class="hljs-keyword" style="color: rgb(85, 133, 155);">else</span> <span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (<span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span> &lt; <span class="hljs-number" style="color: rgb(159, 113, 60);">0</span>) {
+        <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;Введіть додатнє число&lt;/h1&gt;`</span>)
+    } <span class="hljs-keyword" style="color: rgb(85, 133, 155);">else</span> <span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (<span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span> == <span class="hljs-number" style="color: rgb(159, 113, 60);">0</span>) {
+        <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;Будь ласка, введіть число!&lt;h1&gt;`</span>)
+    } <span class="hljs-keyword" style="color: rgb(85, 133, 155);">else</span> <span class="hljs-keyword" style="color: rgb(85, 133, 155);">if</span> (<span class="hljs-built_in" style="color: rgb(159, 113, 60);">number</span> = <span class="hljs-built_in" style="color: rgb(159, 113, 60);">isNaN</span>()) {
+        <span class="hljs-built_in" style="color: rgb(159, 113, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(72, 153, 99);">`&lt;h1&gt;Повинно бути числове значення&lt;h1&gt;`</span>)
     }
-
-
 }
-res(num);</pre>
+res(+prompt(<span class="hljs-string" style="color: rgb(72, 153, 99);">"Введіть число для визначення квадратного кореня"</span>));</pre>
+
 </body>
 <script src="main.js"></script>
 

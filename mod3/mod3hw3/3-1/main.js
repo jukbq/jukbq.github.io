@@ -1,5 +1,4 @@
-let ask = prompt("Введіть радіус кола в сантиметрах");
-let num = new Number(ask)
+
 let res = function getArea(number) {
     if (number > 0) {
         let sum = Math.PI * (number * number)
@@ -11,4 +10,4 @@ let res = function getArea(number) {
     }
 
 }
-res(num)
+res(+prompt("Введіть радіус кола в сантиметрах"))

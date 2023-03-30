@@ -9,72 +9,79 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">MyMath</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-    <span class="hljs-comment" style="color: rgb(126, 119, 119);">//-------1------</span>
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.Pi = <span class="hljs-string" style="color: rgb(75, 139, 139);">'3.14159265358979323846264'</span>
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${this.Pi}</span>&lt;/h1&gt;`</span>)
+   
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 25, 24); color: rgb(168, 161, 159); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> <span class="hljs-title" style="color: rgb(64, 126, 231);">MyMath</span>(<span class="hljs-params" style="color: rgb(223, 83, 32);"></span>) </span>{
+    <span class="hljs-comment" style="color: rgb(156, 148, 145);">//-------1------</span>
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">this</span>.Pi = <span class="hljs-string" style="color: rgb(123, 151, 38);">'3.14159265358979323846264'</span>;
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h1&gt;<span class="hljs-subst">${this.Pi}</span>&lt;/h1&gt;`</span>);
 
-    <span class="hljs-comment" style="color: rgb(126, 119, 119);">//-------2--------</span>
-
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.pow = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">pow</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">'Введіть число'</span>)
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> degree = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">'Введіть степінь'</span>)
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> a = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Number</span>(<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span>);
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> b = <span class="hljs-keyword" style="color: rgb(132, 100, 196);">new</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">Number</span>(degree);
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> result = a;
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> i = <span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>; i &lt; b; i++) {
-            result *= a;
+    <span class="hljs-comment" style="color: rgb(156, 148, 145);">//-------2--------</span>
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">this</span>.pow = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> (<span class="hljs-params" style="color: rgb(223, 83, 32);"><span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span>, degree</span>) </span>{
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">typeof</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span> !== <span class="hljs-string" style="color: rgb(123, 151, 38);">'number'</span> || <span class="hljs-keyword" style="color: rgb(102, 102, 234);">typeof</span> degree !== <span class="hljs-string" style="color: rgb(123, 151, 38);">'number'</span>) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-string" style="color: rgb(123, 151, 38);">'Повинно бути числове значення.'</span>;
         }
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (result == <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
-            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> (<span class="hljs-string" style="color: rgb(75, 139, 139);">'Будь ласка, введіть число!'</span>)
+
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> result = <span class="hljs-number" style="color: rgb(223, 83, 32);">1</span>;
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> i = <span class="hljs-number" style="color: rgb(223, 83, 32);">0</span>; i &lt; degree; i++) {
+            result *= <span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span>;
         }
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> result;
 
-    }
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${pow()}</span>&lt;/h1&gt;`</span>)
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> result;
+    };
 
-    <span class="hljs-comment" style="color: rgb(126, 119, 119);">//---------3---------    </span>
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.abs = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">abs</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> = +prompt(<span class="hljs-string" style="color: rgb(75, 139, 139);">'Введіть число'</span>)
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (<span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> == <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>) {
-            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> (<span class="hljs-string" style="color: rgb(75, 139, 139);">'Будь ласка, введіть число!'</span>)
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span> = +prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">'Введіть число'</span>);
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> degree = +prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">'Введіть степінь'</span>);
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h1&gt;<span class="hljs-subst">${this.pow(number, degree)}</span>&lt;/h1&gt;`</span>);
+
+    <span class="hljs-comment" style="color: rgb(156, 148, 145);">//---------3---------    </span>
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">this</span>.abs = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> (<span class="hljs-params" style="color: rgb(223, 83, 32);"><span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span></span>) </span>{
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">typeof</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span> !== <span class="hljs-string" style="color: rgb(123, 151, 38);">'number'</span>) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> (<span class="hljs-string" style="color: rgb(123, 151, 38);">'Будь ласка, введіть число!'</span>);
         }
-        <span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span> = <span class="hljs-number" style="color: rgb(180, 90, 60);">15</span> % <span class="hljs-number" style="color: rgb(180, 90, 60);">7</span>
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> <span class="hljs-built_in" style="color: rgb(180, 90, 60);">number</span>
-    }
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${this.abs()}</span>&lt;/h1&gt;`</span>)
-
-
-
-    <span class="hljs-comment" style="color: rgb(126, 119, 119);">//---------4----------</span>
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.max = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">maxNum</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arg = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6660</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-55</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>];
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> max = arg[<span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>];
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> i = <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>; i &lt; arg.length; i++) {
-            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (max &lt; arg[i]) max = arg[i];
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (<span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span> &gt;= <span class="hljs-number" style="color: rgb(223, 83, 32);">0</span>) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span>;
+        } <span class="hljs-keyword" style="color: rgb(102, 102, 234);">else</span> {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> -<span class="hljs-built_in" style="color: rgb(223, 83, 32);">number</span>;
         }
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> max
-    }
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${max()}</span>&lt;/h1&gt;`</span>)
+    };
 
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> absNumber = +prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">'Введіть число'</span>);
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h1&gt;<span class="hljs-subst">${this.abs(absNumber)}</span>&lt;/h1&gt;`</span>);
 
-    <span class="hljs-comment" style="color: rgb(126, 119, 119);">//-------5----------</span>
-
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">this</span>.min = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">minNum</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);"></span>) </span>{
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arg = [<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">6660</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-55</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">-1098</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">5</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">12</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">4</span>];
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> min = arg[<span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>];
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">for</span> (<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> i = <span class="hljs-number" style="color: rgb(180, 90, 60);">0</span>; i &lt; arg.length; i++) {
-            <span class="hljs-keyword" style="color: rgb(132, 100, 196);">if</span> (min &gt; arg[i]) min = arg[i];
+    <span class="hljs-comment" style="color: rgb(156, 148, 145);">//---------4----------</span>
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">this</span>.max = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> (<span class="hljs-params" style="color: rgb(223, 83, 32);">arr</span>) </span>{
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> numArr = [];
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> num of arr) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (<span class="hljs-built_in" style="color: rgb(223, 83, 32);">isNaN</span>(num)) {
+                <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-string" style="color: rgb(123, 151, 38);">'Повинно бути числове значення.'</span>;
+            }
+            numArr.push(<span class="hljs-built_in" style="color: rgb(223, 83, 32);">Number</span>(num));
         }
-        <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> min
-    }
-    <span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${min()}</span>&lt;/h1&gt;`</span>)
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">Math</span>.max(...numArr);
+    };
 
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> maxNumbers = prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введіть числа через кому, з яких треба знайти максимальне:"</span>).split(<span class="hljs-string" style="color: rgb(123, 151, 38);">","</span>);
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h1&gt;<span class="hljs-subst">${this.max(maxNumbers)}</span>&lt;/h1&gt;`</span>);
 
+    <span class="hljs-comment" style="color: rgb(156, 148, 145);">//-------5----------</span>
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">this</span>.min = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(102, 102, 234);">function</span> (<span class="hljs-params" style="color: rgb(223, 83, 32);">arr</span>) </span>{
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> numArr = [];
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">for</span> (<span class="hljs-keyword" style="color: rgb(102, 102, 234);">let</span> num of arr) {
+            <span class="hljs-keyword" style="color: rgb(102, 102, 234);">if</span> (<span class="hljs-built_in" style="color: rgb(223, 83, 32);">isNaN</span>(num)) {
+                <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-string" style="color: rgb(123, 151, 38);">'Повинно бути числове значення.'</span>;
+            }
+            numArr.push(<span class="hljs-built_in" style="color: rgb(223, 83, 32);">Number</span>(num));
+        }
+        <span class="hljs-keyword" style="color: rgb(102, 102, 234);">return</span> <span class="hljs-built_in" style="color: rgb(223, 83, 32);">Math</span>.min(...numArr);
+    };
 
+    <span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> minNumbers = prompt(<span class="hljs-string" style="color: rgb(123, 151, 38);">"Введіть числа через кому, з яких треба знайти мінімальне:"</span>).split(<span class="hljs-string" style="color: rgb(123, 151, 38);">","</span>);
+    <span class="hljs-built_in" style="color: rgb(223, 83, 32);">document</span>.write(<span class="hljs-string" style="color: rgb(123, 151, 38);">`&lt;h1&gt;<span class="hljs-subst">${this.min(minNumbers)}</span>&lt;/h1&gt;`</span>);
 }
 
-MyMath()</pre>
+<span class="hljs-keyword" style="color: rgb(102, 102, 234);">const</span> math = <span class="hljs-keyword" style="color: rgb(102, 102, 234);">new</span> MyMath();
+</pre>
+
 </body>
 <script src="main.js"></script>
 

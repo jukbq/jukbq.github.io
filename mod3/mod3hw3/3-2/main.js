@@ -1,7 +1,3 @@
-let ask = prompt("Введіть число для визначення квадратного кореня");
-let num = new Number(ask)
-
-
 let res = function getSqrt(number) {
     if (number > 0) {
         let sum = Math.sqrt(number)
@@ -16,4 +12,4 @@ let res = function getSqrt(number) {
 
 
 }
-res(num);
+res(+prompt("Введіть число для визначення квадратного кореня"));
