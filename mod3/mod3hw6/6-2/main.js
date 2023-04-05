@@ -1,28 +1,25 @@
-let box = document.getElementById('box');
+const box = document.getElementById('box');
+const h1 = box.querySelector('h1');
 
+box.addEventListener('mouseover', function () {
+    box.style.background = 'yellow';
+    h1.innerHTML = 'Хочеш знати який ?';
+});
 
-box.onmouseover = function () {
+box.addEventListener('mousedown', function () {
+    box.style.background = 'black';
+    h1.innerHTML = 'А я тобі не скажу';
+    h1.style.color = 'red';
+});
+
+box.addEventListener('mouseup', function () {
     box.style.background = 'yellow';
-    document.querySelector('h1').innerHTML = 'Хочеш знати який ?';
-};
-box.onmousedown = function () {
-    box.style.background = ' black';
-    document.querySelector('h1').innerHTML = 'А я тобі не скажу';
-    document.querySelector('h1').style.color = 'red';
-};
-box.onmouseup = function () {
-    box.style.background = 'yellow';
-    document.querySelector('h1').innerHTML = 'Хочеш знати який ?';
-    document.querySelector('h1').style.color = 'black'
-};
-box.onmouseout = function () {
+    h1.innerHTML = 'Хочеш знати який ?';
+    h1.style.color = 'black';
+});
+
+box.addEventListener('mouseout', function () {
     box.style.background = '';
-    document.querySelector('h1').innerHTML = 'У мене є секрет';
-};
-
-
-
-
-
-
-
+    h1.innerHTML = 'У мене є секрет';
+    h1.style.color = 'black';
+});
