@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
 
-<body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(27, 24, 24); color: rgb(138, 133, 133); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(132, 100, 196);">function</span> <span class="hljs-title" style="color: rgb(114, 114, 202);">arrCopy</span>(<span class="hljs-params" style="color: rgb(180, 90, 60);">arr</span>) </span>{
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> r = arr;
-    <span class="hljs-keyword" style="color: rgb(132, 100, 196);">return</span> r;
-};
+    <body>
 
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr1 = arrCopy([<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>]);
-<span class="hljs-keyword" style="color: rgb(132, 100, 196);">let</span> arr2 = arrCopy([<span class="hljs-number" style="color: rgb(180, 90, 60);">1</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">2</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">3</span>, [<span class="hljs-number" style="color: rgb(180, 90, 60);">10</span>, <span class="hljs-number" style="color: rgb(180, 90, 60);">20</span>]]);
+   <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(32, 32, 29); color: rgb(166, 162, 140); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(184, 84, 212);">function</span> <span class="hljs-title" style="color: rgb(102, 132, 225);">arrCopy</span>(<span class="hljs-params" style="color: rgb(182, 86, 17);">arr</span>) </span>{
 
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr1}</span>&lt;/h2&gt;`</span>)
-<span class="hljs-built_in" style="color: rgb(180, 90, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(75, 139, 139);">`&lt;h1&gt;<span class="hljs-subst">${arr2}</span>&lt;/h2&gt;`</span>)</pre>
-</body>
-<script src="main.js"></script>
+    <span class="hljs-keyword" style="color: rgb(184, 84, 212);">const</span> copіArr = [...arr];
+
+    <span class="hljs-keyword" style="color: rgb(184, 84, 212);">for</span> (<span class="hljs-keyword" style="color: rgb(184, 84, 212);">let</span> i = <span class="hljs-number" style="color: rgb(182, 86, 17);">0</span>; i &lt; copіArr.length; i++) {
+        <span class="hljs-keyword" style="color: rgb(184, 84, 212);">if</span> (<span class="hljs-built_in" style="color: rgb(182, 86, 17);">Array</span>.isArray(copіArr[i])) {
+            copіArr[i] = arrCopy(copіArr[i]);
+        }
+    }
+
+    <span class="hljs-keyword" style="color: rgb(184, 84, 212);">return</span> copіArr;
+}
+
+
+<span class="hljs-keyword" style="color: rgb(184, 84, 212);">let</span> arr1 = arrCopy([<span class="hljs-number" style="color: rgb(182, 86, 17);">1</span>, <span class="hljs-number" style="color: rgb(182, 86, 17);">2</span>, <span class="hljs-number" style="color: rgb(182, 86, 17);">3</span>]);
+<span class="hljs-keyword" style="color: rgb(184, 84, 212);">let</span> arr2 = arrCopy([<span class="hljs-number" style="color: rgb(182, 86, 17);">1</span>, <span class="hljs-number" style="color: rgb(182, 86, 17);">2</span>, <span class="hljs-number" style="color: rgb(182, 86, 17);">3</span>, [<span class="hljs-number" style="color: rgb(182, 86, 17);">10</span>, <span class="hljs-number" style="color: rgb(182, 86, 17);">20</span>]]);
+
+<span class="hljs-built_in" style="color: rgb(182, 86, 17);">document</span>.write(<span class="hljs-string" style="color: rgb(96, 172, 57);">`&lt;h1&gt;<span class="hljs-subst">${arr1}</span>&lt;/h2&gt;`</span>)
+<span class="hljs-built_in" style="color: rgb(182, 86, 17);">document</span>.write(<span class="hljs-string" style="color: rgb(96, 172, 57);">`&lt;h1&gt;<span class="hljs-subst">${arr2}</span>&lt;/h2&gt;`</span>)
+<span class="hljs-built_in" style="color: rgb(182, 86, 17);">console</span>.log(arr1);
+<span class="hljs-built_in" style="color: rgb(182, 86, 17);">console</span>.log(arr2);
+</pre>
+
+
+    </body>
+    <script src="main.js"></script>
 
 </html>

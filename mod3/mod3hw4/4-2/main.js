@@ -1,9 +1,9 @@
 function arrToString(arr) {
+    const strArr = arr.map(num => num.toString());
+    return strArr;
+}
 
-    let r = arr.join('  ');
-    return r;
 
-};
 const arr1 = arrToString([1, 2, 3]);
 const arr2 = arrToString([10, 200, 3333]);
 

@@ -68,3 +68,4 @@ function MyMath() {
 }
 
 const math = new MyMath();
+
