@@ -1,10 +1,11 @@
-let cont = document.getElementsByClassName('block');
-let coll = document.querySelector('.сolour');
+let box = document.querySelector('.box');
+let body = document.querySelector('body');
+let cont = document.querySelectorAll('.block');
+let colour = document.querySelector('.colour');
 let pict = document.querySelector('.picture');
 
-coll.addEventListener('click', function col() {
-
-    for (let i = 0; i < cont.length; i++) {
+colour.addEventListener('click', function col() {
+     for (let i = 0; i < cont.length; i++) {
         cont[0].style.background = 'red';
         cont[1].style.background = 'orange';
         cont[2].style.background = 'yellow';
@@ -14,13 +15,12 @@ coll.addEventListener('click', function col() {
         cont[6].style.background = 'violet';
         cont[7].style.background = 'lime';
         cont[8].style.background = 'silver';
-
-        
-    };
+     };
+    box.style.opacity = '1';
 });
 
 pict.addEventListener('click', function img() {
-
+    
     for (let i = 0; i < cont.length; i++) {
         cont[0].style.background = 'url("img/1.jpg")';
         cont[0].style.backgroundSize = 'cover';;;
@@ -40,14 +40,12 @@ pict.addEventListener('click', function img() {
         cont[7].style.backgroundSize = 'cover';;
         cont[8].style.background = 'url("img/9.jpg")';
         cont[8].style.backgroundSize = 'cover';;
-        
     }
+    box.style.opacity = '1';
    
 })
 
 
-let box = document.querySelector('.box');
-let body = document.querySelector('body');
 
 
 box.addEventListener('click', function fon() {
