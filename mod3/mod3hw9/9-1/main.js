@@ -9,7 +9,6 @@ let img_margin = 1
 let window_scroll = window.scrollY
 
 window.addEventListener('scroll', function (e) {
-
     const slideLeftRect = slide_from_left.getBoundingClientRect();
     const hrRect = hr.getBoundingClientRect();
     const imgRect = img.getBoundingClientRect();

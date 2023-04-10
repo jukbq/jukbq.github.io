@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
 
-<body>
-    <div id="note">
-        <div class="leftBox">
-            <h3>Список завдань</h3>
-            <ul id="list">
-
-            </ul>
-
+    <body>
+        <div id="notebook">
+            <div class="leftBox">
+                <h3>Список завдань</h3>
+                <ul id="list">
+                   
+                </ul>
+            </div>
+            <div class=" rightBox">
+                <h3>Додат нове завдання</h3>
+                <input type="text" class="note" value="">
+                <br>
+                <input type="submit" class="add" value="Додати">
+            </div>
         </div>
-        <div class=" rightBox">
-            <h3>Додат нове завдання</h3>
 
-            <input type="text" class="note" value="">
-            <br>
-            <input type="submit" class="add" value="Додати">
-
+        <div class="err1">
+            <span class="close">&times;</span>
+            <p>Пусте поле не можна добавити</p>
         </div>
-    </div>
-    <div class="err1">
-        <span class="close">&times;</span>
-        <p>Пусте поле не можна добавити</p>
 
-    </div>
-    <div class="err2">
-        <span class="close">&times;</span>
-        <p>Останній таск зі списку Ви не можете видалити</p>
+        <div class="err2">
+            <span class="close">&times;</span>
+            <p>Останній таск зі списку Ви не можете видалити</p>
+        </div>
 
-    </div>
-
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 
 </html>
+

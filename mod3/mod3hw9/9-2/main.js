@@ -3,61 +3,59 @@ let err1 = document.querySelector('.err1')
 let err2 = document.querySelector('.err2')
 let add = document.querySelector('.add')
 let close = document.querySelector('.close')
+let list = document.querySelector('#list')
 
-add.addEventListener('click', function() {
-    if (note.value == "") {
-        err1.style.display = 'block'
-    }
-    close.onclick = function() {
-        err1.style.display = 'none'
-    }
-    err1.onclick = function() {
-        err1.style.display = 'none'
-    }
-
-})
-
-add.addEventListener('click', function() {
+// додати замытку і очистити поле
+add.addEventListener('click', function () {
     let li = document.createElement("LI")
-    let a = note.value
-    let t = document.createTextNode(a)
-    if (note.value != "") {
-        li.appendChild(t)
-        document.getElementById('list').appendChild(li)
+    let note_value = note.value
+    let div = document.createElement("div")
+    let p = document.createElement("p")
+    let img = document.createElement("img")
 
+    div.classList.add("list_note")
+    p.textContent = note_value
+    img.setAttribute("src", "img/close.png")
+    img.classList.add("del")
+
+    div.appendChild(p)
+    div.appendChild(img)
+    li.appendChild(div)
+
+    if (note_value !== "") {
+        list.appendChild(li)
+    } else {
+        err1.classList.add("active")
     }
     note.value = ""
-
 })
 
-let liDell = document.querySelector('ul')
+close.onclick = function () {
+    err1.classList.remove("active")
+}
+
+err1.onclick = function () {
+    err1.classList.remove("active")
+}
 
 
-liDell.addEventListener('click', function(e) {
-    let x = liDell.children
-    let y;
+//видалення запису зі списку
+list.addEventListener('click', function (e) {
+    const target = e.target
+    console.log(target);
 
-    for (let i = 1; i < x.length; i++) {
-        y = [i]
-        delete(i)
-
-
-
-
+    if (target.nodeName === 'LI' || target.classList.contains('del')) {
+        if (list.children.length > 1) {
+            const li = target.closest('li')
+            li.remove()
+        } else {
+            err2.classList.add("active")
+        }
     }
-    console.log(y)
-    if (x.length == 1) {
-        err2.style.display = 'block';
-    }
-    if (y >= 0) {
-        y.slice(i, 1)
-            //liDell.removeChild(liDell.childNodes[y])
-            //console.log(y)
-    }
-    close.onclick = function() {
+    close.onclick = function () {
         err2.style.display = 'none'
     }
-    err2.onclick = function() {
+    err2.onclick = function () {
         err2.style.display = 'none'
     }
 

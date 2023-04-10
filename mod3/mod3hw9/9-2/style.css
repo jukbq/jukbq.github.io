@@ -1,111 +1,117 @@
-body{
-    background-color: rgb(248, 230, 196);
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(248, 230, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-h3{
-    color: #c39967;
-    font-style: italic;
+body #notebook {
+  width: 604px;
+  height: 404px;
+  display: flex;
+  margin: 0 auto;
+  background-image: url(img/fon.png);
 }
-.leftBox h3{
-    text-align: center;
+body #notebook .leftBox,
+body #notebook .rightBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
-ul{
-   
-    list-style-image: url(img/2.png)
+body #notebook .leftBox h3,
+body #notebook .rightBox h3 {
+  color: #c39967;
+  font-style: italic;
+  text-align: center;
 }
-li{
-    color: #c39967;
-    font-style: italic;
-    margin-bottom: 10px;
+body #notebook .leftBox #list,
+body #notebook .rightBox #list {
+  width: 80%;
+  list-style-image: url(img/2.png);
 }
-
-
-#note{
-    display: block;
-    width: 595px;
-    height: 405px;
-    margin: 0 auto;
-    background-image: url(img/fon.png);
-   
+body #notebook .leftBox #list li,
+body #notebook .rightBox #list li {
+  width: 100%;
 }
-.leftBox{
-    float: left;
-    margin-left: 20px;
-    width: 250px;
-    height: 400px;
-    
+body #notebook .leftBox #list li .list_note,
+body #notebook .rightBox #list li .list_note {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#checkbox{
-    display: block;
+body #notebook .leftBox #list li .list_note p,
+body #notebook .rightBox #list li .list_note p {
+  color: #c39967;
+  font-style: italic;
 }
-.rightBox{
-    float: left;
-    text-align: center;
-    margin-left: 40px;
-    width: 250px;
-    height: 150px;
-   
+body #notebook .leftBox #list li .list_note img,
+body #notebook .rightBox #list li .list_note img {
+  width: 10%;
+  height: 10%;
+  float: right;
 }
-.note{
-    width: 150px;
-    border: none;
-    color: #c39967;
-    font-style: italic;
-    border-bottom: 1px solid #c39967;
-    background: none;
+body #notebook .leftBox .note,
+body #notebook .rightBox .note {
+  width: 150px;
+  border: none;
+  color: #c39967;
+  font-style: italic;
+  border-bottom: 1px solid #c39967;
+  background: none;
 }
-.note:focus{
-    outline: none;
-    border-bottom: 2px solid #c39967;
-    background: none;
+body #notebook .leftBox .note:focus,
+body #notebook .rightBox .note:focus {
+  outline: none;
+  border-bottom: 2px solid #c39967;
+  background: none;
 }
-.add{
-    width: 80px;
-    height: 20px;
-    margin-top: 10px;
-    color: #c39967;
-    font-style: italic;
-    background-color: #f5ebe1;
-    border: 1px solid #c39967 ;
+body #notebook .leftBox .add,
+body #notebook .rightBox .add {
+  width: 80px;
+  height: 20px;
+  margin-top: 10px;
+  color: #c39967;
+  font-style: italic;
+  background-color: #f5ebe1;
+  border: 1px solid #c39967;
 }
-.add:focus{
-    outline: none;
+body #notebook .leftBox:focus,
+body #notebook .rightBox:focus {
+  outline: none;
 }
-
-.err1{
-    display: none;
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    top: 90px;
-    left: 500px;
-    border: 3px solid red;
-    border-radius: 5px;
-    background-color: rgba(235, 132, 132, 0.774);
-    
+body .err1,
+body .err2 {
+  width: 60vw;
+  height: 20vh;
+  display: none;
+  position: absolute;
+  border: 3px solid red;
+  border-radius: 5px;
+  background-color: rgba(235, 132, 132, 0.774);
 }
-.err2{
-    display: none;
-    position: absolute;
-    width: 300px;
-    height: 70px;
-    position: absolute;
-    top: 90px;
-    left: 200px;
-    border: 3px solid red;
-    border-radius: 5px;
-    background-color: rgba(235, 132, 132, 0.774);
-    
+body .err1 p,
+body .err2 p {
+  text-align: center;
+  font-size: 18px;
 }
-p{
-    text-align: center;
-    font-size: 18px;
-    
-    
-    
+body .err1 .close,
+body .err2 .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin-left: 280px;
+  cursor: pointer;
 }
-.close{
-    float: left;
-   margin-left: 280px;
-cursor: pointer;
+body .err1.active,
+body .err2.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
