@@ -1,25 +1,21 @@
-let cont = document.move
-let ph = document.forms.ph[0]
-
-console.log(ph)
+let cont = document.forms.move;
+let ph = document.forms.ph.textPh;
 
 cont.butt.addEventListener('click', function () {
-    let leftText = cont.leftText.value
+    let leftText = cont.leftText.value;
     if (leftText != "") {
-        cont.rightText.value = `${leftText}`
+        cont.rightText.value = `${leftText}`;
     }
     cont.leftText.value = '';
-    console.log(leftText)
-})
+});
 
 ph.addEventListener('focus', function () {
-    let text = ph.value
-    ph.placeholder = `${text}`
+    let text = ph.value;
+    ph.placeholder = `${text}`;
+});
 
-    if (ph.addEventListener = 'blur') {
-        ph.value = ''
-    }
-
-})
-
-
+ph.addEventListener('blur', function () {
+    let text = ph.value;
+    ph.placeholder = `${text}`;
+    ph.value = '';
+});
