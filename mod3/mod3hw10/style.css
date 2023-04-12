@@ -1,165 +1,173 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/*--------------Стилі блоків----------------*/
+
+/*-Стилі блоків--*/
 .container,
-.container2{
-    width: 60%;
-    margin: 0 auto;
+.container2 {
+  width: 60%;
+  margin: 0 auto;
 }
-.block{
-    height: 250px;
-    border-radius: 5px;
-    background-color: darkgrey;
-    margin: 8px 0;
-    padding: 20px;
-    position: relative;
-}
-
-.centrBlock{
-text-align: center;
-}
-.colorBox{
-    width: 150px;
-   height: 150px;
-   outline: 1px solid black;
-   position: absolute;
-   top: 36px;
-   right: 98px;
-   display: none;
-}
-.colCell{
-    float: left;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+.block {
+  height: 250px;
+  border-radius: 5px;
+  background-color: darkgrey;
+  margin: 8px 0;
+  padding: 20px;
+  position: relative;
 }
 
-.editArea{
-    width: 100%;
-    height: 150px;
-    margin-bottom: 15px;
-    resize: none;
+.centrBlock {
+  text-align: center;
+}
+
+.colorBox {
+  width: 150px;
+  height: 150px;
+  outline: 1px solid black;
+  position: absolute;
+  top: 36px;
+  right: 98px;
+  display: none;
+}
+
+.colCell {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.editArea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+  resize: none;
 }
 label {
-margin-right: 27px;
+  margin-right: 27px;
 }
-.ff{
-    width: 280px;
-    height: 25px;
+.ff {
+  width: 280px;
+  height: 25px;
 }
 .countTr,
 .countTd,
 .widthTd,
 .heightTd,
 .countLi,
-.listStyle{
-    width: 427px;
-    height: 26px;
-    margin-left: 62px;
-    margin-bottom: 5px;
+.listStyle {
+  width: 427px;
+  height: 26px;
+  margin-left: 62px;
+  margin-bottom: 5px;
 }
-.countTd{
-   margin-left: 62px;
+.countTd {
+  margin-left: 62px;
 }
-.widthTd{
-   margin-left: 4px;
+.widthTd {
+  margin-left: 4px;
 }
-.heightTd{
-    margin-left: 13px;
+.heightTd {
+  margin-left: 13px;
 }
 
-.countLi{
-   margin-left: 62px;
+.countLi {
+  margin-left: 62px;
 }
-.listStyle{
-    margin-left: 54px;
+.listStyle {
+  margin-left: 54px;
 }
 .widthBr,
 .tb,
-.cb{
-    width: 70px;
-    height: 26px;
-    margin-left: 24px;
-    
+.cb {
+  width: 70px;
+  height: 26px;
+  margin-left: 24px;
 }
 .tb label,
-.cb label{
-    margin-right: 30px;
+.cb label {
+  margin-right: 30px;
 }
 
-/*-----------------------------------------------------------------*/
-/*---------------------------   кнопки    --------------------------*/
+/*--кнопки---*/
 .btnEdit,
 .batSty,
 .batAdd,
 .batSv,
 .crtList,
-.crtTable{
-    width: 90px;
-    height: 30px;
-    color: rgb(241, 240, 238);
-    font-weight: bold;
-    border-radius: 3px;
-    
+.crtTable {
+  width: 90px;
+  height: 30px;
+  color: rgb(241, 240, 238);
+  font-weight: bold;
+  border-radius: 3px;
 }
-.btnEdit{
-    background-color: rgb(224, 105, 61);
+.btnEdit {
+  background-color: rgb(224, 105, 61);
 }
-.btnEdit:hover{
-    background-color: rgb(221, 69, 13);
+.btnEdit:hover {
+  background-color: rgb(221, 69, 13);
 }
-.batSty{
-    background-color: rgb(61, 64, 224);
+.batSty {
+  background-color: rgb(61, 64, 224);
 }
-.batSty:hover{
-    background-color: rgb(14, 18, 211);
+.batSty:hover {
+  background-color: rgb(14, 18, 211);
 }
-.batAdd{
-    background-color: rgb(207, 26, 2);
+.batAdd {
+  background-color: rgb(207, 26, 2);
 }
-.batAdd:hover{
-    background-color: rgb(133, 16, 1);
+.batAdd:hover {
+  background-color: rgb(133, 16, 1);
 }
 .batSv,
 .crtList,
-.crtTable{
-    background-color: rgb(19, 160, 0);
+.crtTable {
+  background-color: rgb(19, 160, 0);
 }
 .batSv:hover,
 .crtList:hover,
-.crtTable{
-    background-color: rgb(2, 87, 6);
+.crtTable {
+  background-color: rgb(2, 87, 6);
 }
 .txtCol,
-.bcgCol{
-    width: 100px;
-    height: 30px;
-    color: rgb(241, 240, 238);
-    font-weight: bold;
-    border-radius: 3px;
-    background-color: rgb(94, 90, 90);
+.bcgCol {
+  width: 100px;
+  height: 30px;
+  color: rgb(241, 240, 238);
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: rgb(94, 90, 90);
 }
 .txtCol:hover,
-.bcgCol:hover{
-    background-color: rgb(43, 42, 42);
+.bcgCol:hover {
+  background-color: rgb(43, 42, 42);
 }
-/*---------------------------------------------------*/
-/*----------------------JS----------------------------*/
+
+
+/*--JS--*/
 .editBlock,
 .styleBlock,
 .creatList,
 .cteatTable,
-.container2{
-    display: none;
+.container2 {
+  display: none;
 }
-.show{
-    display: block;
+.show {
+  display: block;
 }
-.bold{
-    font-weight: normal;
-
+.show_table {
+     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
-
+.bold {
+  font-weight: normal;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

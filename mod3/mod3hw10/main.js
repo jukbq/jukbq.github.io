@@ -1,6 +1,6 @@
 const getS = selector => document.querySelector(selector)
 
-/*---------Редагування тексту------------*/
+//Редагування тексту
 getS('.btnEdit').onclick = function () {
     getS('.editBlock').classList.add('show')
     getS('.styleBlock').classList.remove('show')
@@ -10,30 +10,29 @@ getS('.batSv').onclick = function () {
     getS('.editBlock').classList.remove('show')
     getS('.topBlock').innerHTML = getS('.editArea').value
 }
-/*-------------------------------------*/
-/*-----------------------------Надання силю--------------------------*/
-/*---------Розмір шрифта------------*/
+
+//Надання силю
+//Розмір шрифта
 getS('.batSty').onclick = function () {
     getS('.styleBlock').classList.add('show')
     getS('.editBlock').classList.remove('show')
-
-
 }
 getS('.fSize').onclick = function (e) {
     getS('.topBlock').style.fontSize = event.target.value
     getS('.cont2').style.height = '100%'
 }
-/*---------Вибір стиля шрифта------------*/
+
+//Вибір стиля шрифта
 getS('.ff').onchange = function (e) {
     getS('.topBlock').style.fontFamily = this.value
     if (this.value != "") {
         getS('.ff1').setAttribute("disabled", "true");
     }
-
 }
 
 let color = ['red', 'orange', 'yellow', 'green', 'blue', 'darkblue', 'violet', 'white', 'black']
-/*---------Надаття кольору шрифту------------*/
+
+//Надаття кольору шрифту
 getS('.txtCol').onclick = function () {
     getS('.colorBox').classList.add('show')
     for (let i = 0; i < getS('.colorBox').children.length; i++) {
@@ -43,7 +42,8 @@ getS('.txtCol').onclick = function () {
         }
     }
 }
-/*---------Надаття кольору фону------------*/
+
+//Надаття кольору фону
 getS('.bcgCol').onclick = function () {
     getS('.colorBox').classList.add('show')
     for (let i = 0; i < getS('.colorBox').children.length; i++) {
@@ -54,8 +54,7 @@ getS('.bcgCol').onclick = function () {
     }
 }
 
-/*---------вибір жирності та курсиву------------*/
-
+//вибір жирності та курсиву
 getS('.fBold').onclick = function () {
     if (event.target.checked) {
         getS('.topBlock').style.fontWeight = 'bold';
@@ -69,15 +68,16 @@ getS('.fItalic').onclick = function () {
         getS('.topBlock').style.fontStyle = 'normal';
 }
 
-/*-------------------Нопий блок-----------------------------*/
+//Нопий блок
 getS('.batAdd').onclick = function () {
     getS('.container').style.display = 'none'
     getS('.container2').style.display = 'block'
 }
-/*-------------------------------------------------------------*/
-/*---------------------Таьлиця----------------------------------*/
+
+
+//Таьлиця
 getS('.tab').onclick = function () {
-    getS('.cteatTable').classList.add('show')
+    getS('.cteatTable').classList.add('show_table')
     getS('.cont2').style.height = '100%'
     getS('.creatList').classList.remove('show')
 }
@@ -108,15 +108,13 @@ getS('.crtTable').onclick = function () {
 }
 
 
-/*---------------------Список----------------------------------*/
+//Список
 getS('.list').onclick = function () {
     getS('.creatList').classList.add('show')
-    getS('.cteatTable').classList.remove('show')
-
+    getS('.cteatTable').classList.remove('show_table')
 }
 
 const list = document.forms['list']
-
 getS('.crtList').onclick = function () {
     let li = list.countLi.value
     let liSt = list.listStyle.value
