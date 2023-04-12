@@ -4,7 +4,7 @@ let email = document.querySelector('.email')
 let pass = document.querySelector('.pass')
 
 /*----------------Перевірка імені --------------------*/
-let fsnameTest = /^[a-zA-z]{2,20}$/
+let fsnameTest = /^[A-Za-z]{2,20}$/;
 fname.addEventListener('input', function () {
     let fnameInp = fsnameTest.test(this.value)
     if (fnameInp) {
@@ -14,12 +14,12 @@ fname.addEventListener('input', function () {
         this.style.border = '1px solid red'
         this.style.boxShadow = '0 0 10px  rgb(243, 75, 75)'
     }
-    fname.addEventListener('blur', function () {
-        let fnameInp = fsnameTest.test(this.value)
-        if (fnameInp) {
-            this.style.boxShadow = 'none'
-        }
-    })
+})
+fname.addEventListener('blur', function () {
+    let fnameInp = fsnameTest.test(this.value)
+    if (fnameInp) {
+        this.style.boxShadow = 'none'
+    }
 
 })
 /*----------------Перевірка прізвищя-------------*/
@@ -32,12 +32,12 @@ lname.addEventListener('input', function () {
         this.style.border = '1px solid red'
         this.style.boxShadow = '0 0 10px  rgb(243, 75, 75)'
     }
-    lname.addEventListener('blur', function () {
-        let fnameInp = fsnameTest.test(this.value)
-        if (fnameInp) {
-            this.style.boxShadow = 'none'
-        }
-    })
+})
+lname.addEventListener('blur', function () {
+    let fnameInp = fsnameTest.test(this.value)
+    if (fnameInp) {
+        this.style.boxShadow = 'none'
+    }
 })
 
 /*----------------Перевірка пошти-------------*/
@@ -51,12 +51,12 @@ email.addEventListener('input', function () {
         this.style.border = '1px solid red'
         this.style.boxShadow = '0 0 10px  rgb(243, 75, 75)'
     }
-    email.addEventListener('blur', function () {
-        let emailInp = emailTest.test(this.value)
-        if (emailInp) {
-            this.style.boxShadow = 'none'
-        }
-    })
+})
+email.addEventListener('blur', function () {
+    let emailInp = emailTest.test(this.value)
+    if (emailInp) {
+        this.style.boxShadow = 'none'
+    }
 })
 
 /*----------------Перевірка паролю-------------*/
@@ -70,12 +70,12 @@ pass.addEventListener('input', function () {
         this.style.border = '1px solid red'
         this.style.boxShadow = '0 0 10px  rgb(243, 75, 75)'
     }
-    pass.addEventListener('blur', function () {
-        let passInp = passTest.test(this.value)
-        if (passInp) {
-            this.style.boxShadow = 'none'
-        }
-    })
+})
+pass.addEventListener('blur', function () {
+    let passInp = passTest.test(this.value)
+    if (passInp) {
+        this.style.boxShadow = 'none'
+    }
 })
 /*----------------Активація-------------*/
 let ok = document.getElementById('ok')

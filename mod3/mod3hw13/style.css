@@ -25,6 +25,9 @@ body {
     border-radius: 5px;
     border: 0.5px solid rgb(92, 89, 89);
 }
+.log::placeholder {
+  text-indent: 10px;
+}
 
 .sub {
     background: rgb(48, 114, 238);
