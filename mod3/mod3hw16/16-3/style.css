@@ -35,6 +35,7 @@
 }
 
 .fon{
+  display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -42,12 +43,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff00;
+    background-color: #05050581;
     z-index: -1;
 }
 
 .bigBox {
     position: absolute;
+  
     z-index: 3;
    
 }
