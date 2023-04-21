@@ -83,7 +83,7 @@ $(document).ready(function () {
 
 
     $('.pazzl').on('mouseup', function () {
-        let tm = $('span').text()
+        let tm = $('.clock').text()
         console.log(tm);
         if (tm == '00:00') {
             timer()
@@ -95,7 +95,7 @@ $(document).ready(function () {
     /*---------------------------таймер-----------------------*/
     let tim
     function timer() {
-        let tm = document.querySelector('span')
+        let tm = document.querySelector('.clock')
         let x = '02'
         let y = '00'
         tm.textContent = `${x}:${y}`;
@@ -162,7 +162,7 @@ $(document).ready(function () {
             display: 'flex'
         })
         set = setInterval(() => {
-            let modTime = document.querySelector('span').textContent
+            let modTime = document.querySelector('.clock').textContent
             $('p').text(`You still have time, you sure? ${modTime}`)
         }, 1)
     })
@@ -185,7 +185,7 @@ $(document).ready(function () {
     })
     $('#new').on('click', function () {
         clearInterval(tim)
-        $('span').text('00:00')
+        $('.clock').text('00:00')
         $('#left').append($('#right>div'))
         sort()
         $('#start').attr('disabled', false);
