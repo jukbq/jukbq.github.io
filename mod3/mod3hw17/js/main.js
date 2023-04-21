@@ -76,11 +76,11 @@ $(document).ready(function () {
         stop: function () {
             $(dragPazz).css(`top`, `${a}px`)
             $(dragPazz).css(`left`, `${b}px`)
-        
+
         }
-        
+
     })
-  
+
 
     $('.pazzl').on('mouseup', function () {
         let tm = $('span').text()
