@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
 
-<body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">summ</span><span class="hljs-params" style="color: rgb(147, 92, 37);">()</span> </span>{
-    let x = <span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>;
-    <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">addition</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(number)</span> </span>{
-        z = x
-        x = x + number;
-        document.write(`&lt;h2&gt;${z} + ${number} = ${x} &lt;/h2&gt;`)
+    <body>
 
+        <pre class="hljs" style="display: block; overflow-x: auto; background:
+            rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">getSum</span>(<span class="hljs-params" style="color: rgb(170, 87, 60);">num</span>) </span>{
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">let</span> sum = <span class="hljs-number" style="color: rgb(170, 87, 60);">0</span>;
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> (<span class="hljs-params" style="color: rgb(170, 87, 60);">num</span>) </span>{
+        sum += num;
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;<span class="hljs-subst">${sum}</span>&lt;/h2&gt;`</span>);
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> sum;
     }
 }
-let res = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> summ;
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">5</span>)
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">8</span>)
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">21</span>)
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>)
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">-1</span>)
-res(<span class="hljs-number" style="color: rgb(147, 92, 37);">10254</span>)</pre>
 
-
-</body>
-<script src="main.js"></script>
+<span class="hljs-keyword" style="color: rgb(149, 90, 231);">let</span> res = getSum();
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">5</span>);
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">8</span>);
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">21</span>);
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">1</span>);
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">-1</span>);
+res(<span class="hljs-number" style="color: rgb(170, 87, 60);">10254</span>);
+</pre>
+    </body>
+    <script src="main.js"></script>
 
 </html>

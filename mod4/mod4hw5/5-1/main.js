@@ -1,16 +1,16 @@
-function summ() {
-    let x = 0;
-    return function addition(number) {
-        z = x
-        x = x + number;
-        document.write(`<h2>${z} + ${number} = ${x} </h2>`)
-
+function getSum(num) {
+    let sum = 0;
+    return function (num) {
+        sum += num;
+        document.write(`<h2>${sum}</h2>`);
+        return sum;
     }
 }
-let res = new summ;
-res(5)
-res(8)
-res(21)
-res(1)
-res(-1)
-res(10254)
+
+let res = getSum();
+res(5);
+res(8);
+res(21);
+res(1);
+res(-1);
+res(10254);
