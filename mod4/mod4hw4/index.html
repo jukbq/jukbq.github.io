@@ -10,55 +10,109 @@
 </head>
 
 <body>
-    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(22, 27, 29); color: rgb(126, 162, 180); padding: 0.5em;"><span class="hljs-class"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">class</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">Worker</span> </span>{
-    constructor(firstName, secondName, rate, days) {
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.firstName = firstName;
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.secondName = secondName;
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.rate = rate;
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.days = days;
-
+   
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(126, 120, 135);">// завдання 1</span>
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">Worker</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">constructor</span>(firstName, secondName, rate, days) {
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.firstName = firstName;
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.secondName = secondName;
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.rate = rate;
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.days = days;
     }
+
     getSalary() {
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.rate * <span class="hljs-keyword" style="color: rgb(107, 107, 184);">this</span>.days
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.rate * <span class="hljs-keyword" style="color: rgb(149, 90, 231);">this</span>.days;
     }
-
 }
 
-<span class="hljs-keyword" style="color: rgb(107, 107, 184);">const</span> worker1 = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> Worker(<span class="hljs-string" style="color: rgb(86, 140, 59);">'Василь'</span>, <span class="hljs-string" style="color: rgb(86, 140, 59);">'Пупкін'</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">500</span>, <span class="hljs-number" style="color: rgb(147, 92, 37);">22</span>);
-document.write(`&lt;h2&gt; Ім\`я: ${worker1.firstName} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt; Поізвище: ${worker1.secondName} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt; Плата в день: ${worker1.rate} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt; Робочих днів: ${worker1.days} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt; Зарплата ${worker1.getSalary()} &lt;/h2&gt;`)
+<span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> worker1 = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">new</span> Worker(<span class="hljs-string" style="color: rgb(42, 146, 146);">'Іван'</span>, <span class="hljs-string" style="color: rgb(42, 146, 146);">'Васильченко'</span>, <span class="hljs-number" style="color: rgb(170, 87, 60);">500</span>, <span class="hljs-number" style="color: rgb(170, 87, 60);">22</span>);
+<span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> worker2 = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">new</span> Worker(<span class="hljs-string" style="color: rgb(42, 146, 146);">'Петро'</span>, <span class="hljs-string" style="color: rgb(42, 146, 146);">'Федорійченко'</span>, <span class="hljs-number" style="color: rgb(170, 87, 60);">700</span>, <span class="hljs-number" style="color: rgb(170, 87, 60);">24</span>);
 
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Ім'я: <span class="hljs-subst">${worker1.firstName}</span>&lt;/h2&gt;
+&lt;h2&gt;Прізвище: <span class="hljs-subst">${worker1.secondName}</span>&lt;/h2&gt;
+&lt;h2&gt;Плата в день: <span class="hljs-subst">${worker1.rate}</span>&lt;/h2&gt;
+&lt;h2&gt;Робочих днів: <span class="hljs-subst">${worker1.days}</span>&lt;/h2&gt;
+&lt;h2&gt;Зарплата: <span class="hljs-subst">${worker1.getSalary()}</span>&lt;/h2&gt;`</span>);
 
-<span class="hljs-comment" style="color: rgb(113, 149, 168);">/*----------------------------------------------*/</span>
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Ім'я: <span class="hljs-subst">${worker2.firstName}</span>&lt;/h2&gt;
+&lt;h2&gt;Прізвище: <span class="hljs-subst">${worker2.secondName}</span>&lt;/h2&gt;
+&lt;h2&gt;Плата в день: <span class="hljs-subst">${worker2.rate}</span>&lt;/h2&gt;
+&lt;h2&gt;Робочих днів: <span class="hljs-subst">${worker2.days}</span>&lt;/h2&gt;
+&lt;h2&gt;Зарплата: <span class="hljs-subst">${worker2.getSalary()}</span>&lt;/h2&gt;`</span>);
 
-<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">class</span> <span class="hljs-title" style="color: rgb(37, 127, 173);">MyString</span> </span>{
-
-
+<span class="hljs-comment" style="color: rgb(126, 120, 135);">//завдання 2</span>
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">MyString</span> </span>{
     reverse(word) {
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word.split(<span class="hljs-string" style="color: rgb(86, 140, 59);">""</span>).reverse().join(<span class="hljs-string" style="color: rgb(86, 140, 59);">""</span>)
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> word.split(<span class="hljs-string" style="color: rgb(42, 146, 146);">""</span>).reverse().join(<span class="hljs-string" style="color: rgb(42, 146, 146);">""</span>);
     }
     ucFirst(word) {
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word[<span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>].toUpperCase() + word.slice(<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>);
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> word[<span class="hljs-number" style="color: rgb(170, 87, 60);">0</span>].toUpperCase() + word.slice(<span class="hljs-number" style="color: rgb(170, 87, 60);">1</span>);
     }
     ucWords(word) {
-        <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word.toLowerCase().split(<span class="hljs-string" style="color: rgb(86, 140, 59);">' '</span>).map(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(107, 107, 184);">function</span><span class="hljs-params" style="color: rgb(147, 92, 37);">(word)</span> </span>{
-                <span class="hljs-keyword" style="color: rgb(107, 107, 184);">return</span> word[<span class="hljs-number" style="color: rgb(147, 92, 37);">0</span>].toUpperCase() + word.substr(<span class="hljs-number" style="color: rgb(147, 92, 37);">1</span>);
+        <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> word
+            .toLowerCase()
+            .split(<span class="hljs-string" style="color: rgb(42, 146, 146);">" "</span>)
+            .map(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> (<span class="hljs-params" style="color: rgb(170, 87, 60);">word</span>) </span>{
+                <span class="hljs-keyword" style="color: rgb(149, 90, 231);">return</span> word[<span class="hljs-number" style="color: rgb(170, 87, 60);">0</span>].toUpperCase() + word.substr(<span class="hljs-number" style="color: rgb(170, 87, 60);">1</span>);
             })
-            .join(<span class="hljs-string" style="color: rgb(86, 140, 59);">' '</span>);
+            .join(<span class="hljs-string" style="color: rgb(42, 146, 146);">" "</span>);
     }
-
 }
 
-let str = <span class="hljs-keyword" style="color: rgb(107, 107, 184);">new</span> MyString()
+<span class="hljs-keyword" style="color: rgb(149, 90, 231);">let</span> str = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">new</span> MyString();
 
-document.write(`&lt;h2&gt; *********************************** &lt;/h2&gt;`)
-document.write(`&lt;h2&gt;  ${str.reverse(<span class="hljs-string" style="color: rgb(86, 140, 59);">'IVAN'</span>)} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt;${str.ucFirst(<span class="hljs-string" style="color: rgb(86, 140, 59);">'arsenal'</span>)} &lt;/h2&gt;`)
-document.write(`&lt;h2&gt;  ${str.ucFucWordsirst(<span class="hljs-string" style="color: rgb(86, 140, 59);">'arsenal arsenal arsenal'</span>)} &lt;/h2&gt;`)</pre>
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt; *********************************** &lt;/h2&gt;`</span>);
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;  <span class="hljs-subst">${str.reverse("IVAN")}</span> &lt;/h2&gt;`</span>);
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;<span class="hljs-subst">${str.ucFirst("arsenal")}</span> &lt;/h2&gt;`</span>);
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;  <span class="hljs-subst">${str.ucWords("arsenal arsenal arsenal")}</span> &lt;/h2&gt;`</span>);
 
+
+<span class="hljs-comment" style="color: rgb(126, 120, 135);">//Завдання 3</span>
+
+<span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt; *********************************** &lt;/h2&gt;`</span>);
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">CoffeeMake</span> </span>{
+    on() {
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Розботу розпочато&lt;/h2&gt;`</span>);
+    }
+
+    off() {
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Роботу завершено&lt;/h2&gt;`</span>);
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt; ************** &lt;/h2&gt;`</span>);
+      
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">DripCoffeeMaker</span> <span class="hljs-keyword" style="color: rgb(149, 90, 231);">extends</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">CoffeeMake</span> </span>{
+    brew() {
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Капельна кавоварка готує каву&lt;/h2&gt;`</span>);
+    
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">EspressoMachine</span> <span class="hljs-keyword" style="color: rgb(149, 90, 231);">extends</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">CoffeeMake</span> </span>{
+    brew() {
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Ріжкова кавоварка готує каву&lt;/h2&gt;`</span>);
+       
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">CarobCoffeeMaker</span> <span class="hljs-keyword" style="color: rgb(149, 90, 231);">extends</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">CoffeeMake</span> </span>{
+    brew() {
+        <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.write(<span class="hljs-string" style="color: rgb(42, 146, 146);">`&lt;h2&gt;Кавомашинаготує каву&lt;/h2&gt;`</span>);
+      
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">type</span>С<span class="hljs-title" style="color: rgb(87, 109, 219);">offeeMaker</span>(<span class="hljs-params" style="color: rgb(170, 87, 60);">type</span>)</span>{
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> myCoffeeMaker = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">new</span> type();
+    myCoffeeMaker.on();
+    myCoffeeMaker.brew();
+    myCoffeeMaker.off();
+}
+
+typeСoffeeMaker(DripCoffeeMaker)
+typeСoffeeMaker(EspressoMachine)
+typeСoffeeMaker(CarobCoffeeMaker)
+</pre>
 
 
 </body>
