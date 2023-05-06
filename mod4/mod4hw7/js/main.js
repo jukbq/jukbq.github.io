@@ -41,7 +41,7 @@ $('.serchBtn').click(function(e) {
         /*--------------------------MOvie detail----------------------------*/
         $('.moreDetail').click(function(e) {
             let titel = $(this).val()
-            let url_detal = 'http://www.omdbapi.com/?i=tt3896198&apikey=bc91fe78&t=*' +
+            let url_detal = 'https://www.omdbapi.com/?i=tt3896198&apikey=bc91fe78&t=*' +
                 titel +
                 '&plot=full';
             $('.modal_win').addClass('modal_win_open')
