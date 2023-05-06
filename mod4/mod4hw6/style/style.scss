@@ -1,0 +1,82 @@
+.form_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: -5px;
+  }
+    button {
+      width: 100%;
+    }
+
+  .signUpForm,
+  .signInForm,
+  .person_card {
+    display: none;
+  }
+  .active {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .col-md-4 {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 35px;
+  }
+
+  .supBtn {
+    width: 100%;
+  }
+
+  .iinvalid-feedback {
+    margin-top: 18px;
+  }
+
+  .sun,
+  .sin {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .displayNone {
+    display: none;
+    justify-content: space-between;
+  }
+
+  .displayFlex {
+    display: flex;
+  }
+  .person_card {
+    height: 60vh;
+    .person_img {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-image: url("../img/male.png");
+        background-size: cover;
+      }
+    }
+    .person_name {
+      font-size: 28px;
+      font-weight: 800;
+    }
+  
+  }
+}
