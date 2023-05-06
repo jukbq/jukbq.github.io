@@ -1,5 +1,6 @@
 $('.serchBtn').click(function(e) {
 
+
     let serch = $('.serchArr').val()
     let url = 'http://www.omdbapi.com/?i=tt3896198&apikey=bc91fe78&s=*' +
         serch;
@@ -96,6 +97,7 @@ $('.serchBtn').click(function(e) {
 
     get()
 
+    
 
 
 });

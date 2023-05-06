@@ -4,14 +4,10 @@ h1 {
 
 .seerch {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 50px 0;
 }
-
 .seerch .serchArr,
 .seerch .serchBtn {
   width: 400px;
@@ -22,54 +18,31 @@ h1 {
   width: 90%;
   height: auto;
 }
-
 #movieList ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 #movieList ul li {
   width: 250px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 25px;
-  border: .5px solid #bbbbbb52;
+  border: 0.5px solid rgba(187, 187, 187, 0.3215686275);
   border-radius: 5px;
 }
-
 #movieList ul li img {
   height: 350px;
-  -webkit-box-shadow: 0px 0px 4px 3px #808080b0;
-          box-shadow: 0px 0px 4px 3px #808080b0;
+  box-shadow: 0px 0px 4px 3px rgba(128, 128, 128, 0.6901960784);
 }
-
 #movieList ul li .movie_titel {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #bbbbbb;
   padding: 0 5px;
   font-size: 16px;
@@ -89,88 +62,56 @@ h1 {
   width: 100%;
   height: 100%;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   top: 0px;
-  background-color: #373232cf;
+  background-color: rgba(55, 50, 50, 0.8117647059);
   z-index: -100;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
-
 .modal_win .imfo_movie {
   width: 90%;
   height: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  outline: 1px solid #bbbbbb52;
+  outline: 1px solid rgba(187, 187, 187, 0.3215686275);
   outline-offset: -15px;
   padding: 20px;
   margin: auto;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
-
 .modal_win .imfo_movie img {
   height: 100%;
   margin-right: 10px;
 }
-
 .modal_win .imfo_movie .text_content {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: left;
   overflow: auto;
 }
-
 .modal_win .imfo_movie .text_content .movie_titel {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #bbbbbb;
   padding: 0 5px;
   font-size: 16px;
   font-weight: 600;
 }
-
 .modal_win .imfo_movie .text_content p {
   font-size: 14;
 }
-
 .modal_win .imfo_movie .text_content p span {
   font-weight: 600;
 }
-
 .modal_win .imfo_movie .text_content :nth-child(2) {
   font-size: 12px;
   margin-top: 10px;
@@ -180,4 +121,3 @@ h1 {
   opacity: 1;
   z-index: 100;
 }
-/*# sourceMappingURL=style.css.map */
