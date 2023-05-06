@@ -1,84 +1,73 @@
 .form_section {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
 }
-
-h2 {
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: -5px;
+.form_section h2 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: -5px;
 }
-
-
-/*-------------------------Sihn Up Fprm---------------------------*/
-
-.signUpForm,
-.signInForm {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+.form_section button {
+  width: 100%;
 }
-
-.signInForm {
-    display: none;
+.form_section .signUpForm,
+.form_section .signInForm,
+.form_section .person_card {
+  display: none;
 }
-
-.col-md-4 {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 35px;
+.form_section .active {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
-
-.supBtn {
-    width: 100%;
+.form_section .col-md-4 {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 35px;
 }
-
-.invalid-tooltip {
-    margin-top: 18px;
+.form_section .supBtn {
+  width: 100%;
 }
-
-.sun,
-.sin {
-    font-size: 14px;
-    margin-top: 0px;
+.form_section .iinvalid-feedback {
+  margin-top: 18px;
 }
-
-
-/*---------------Form open----------------------------*/
-
-.displayNone {
-    display: none;
+.form_section .sun,
+.form_section .sin {
+  font-size: 14px;
+  margin-top: 0px;
 }
-
-.displayFlex {
-    display: flex;
+.form_section .displayNone {
+  display: none;
+  justify-content: space-between;
 }
-
-
-/*-------------------------Person card------------------------------*/
-
-.person_card {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: none;
+.form_section .displayFlex {
+  display: flex;
 }
-
-.person_img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 1px solid black;
+.form_section .person_card {
+  height: 60vh;
 }
-
-.person_name {
-    font-size: 28px;
-    font-weight: 800;
+.form_section .person_card .person_img {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_section .person_card .person_img .img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url("../img/male.png");
+  background-size: cover;
+}
+.form_section .person_card .person_name {
+  font-size: 28px;
+  font-weight: 800;
 }
