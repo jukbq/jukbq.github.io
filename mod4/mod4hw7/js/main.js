@@ -2,8 +2,7 @@ $('.serchBtn').click(function(e) {
 
 
     let serch = $('.serchArr').val()
-    let url = 'http://www.omdbapi.com/?i=tt3896198&apikey=bc91fe78&s=*' +
-        serch;
+    let url = 'https://www.omdbapi.com/?i=tt3896198&apikey=bc91fe78&s=*' + serch;
 
     async function get() {
         e.preventDefault();
@@ -97,7 +96,7 @@ $('.serchBtn').click(function(e) {
 
     get()
 
-    
+
 
 
 });
